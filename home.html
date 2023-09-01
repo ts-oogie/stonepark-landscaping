@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>lsfilm</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="styles/main.css"> 
+    
+        <script src="bower_components/jquery/dist/jquery.js"></script> 
+        <script src="bower_components/underscore/underscore-min.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+ 
+        <script type="text/javascript" src="scripts/preloader.js"></script> 
+    </head>
+    <body> 
+    <div id="image-loader">
+        <ul>
+            <!--<li><img src="images/lsfilm-Header-1-Large.jpg" onload="preloaded('A')"/></li>-->
+            <li><img src="images/Leeches-Header-2-Large.jpg" onload="preloaded('B')"/></li>
+            <li><img src="images/Leeches-Header-3-Large.jpg" onload="preloaded('C')"/></li>
+            <li><img src="images/Leeches-Header-4-Large.jpg" onload="preloaded('D')"/></li>
+            <li><img src="images/Leeches-Header-5-Large.jpg" onload="preloaded('E')"/></li>
+        </ul>
+    </div> 
+    <div id="overlaycontainer">
+        <div id="overlay-nav">
+        </div>
+        <div id="overlay-app">
+        </div>
+    </div>  
+    <div id="sidePanel">
+            <a id="closeButton" onclick="closeSidePanel()" style="float: right;">
+            <!--<div id="closer" style="height:35px; width: 75px; border: 1px solid white">  CLOSE - X </div></a> -->
+            <ul id="sidePanelUi">
+                <li><a id="nav-home" class="navSP" href="#/">HOME</a></li> 
+                <li><a id="nav-team" class="navSP" href="#/team">TEAM</a></li> 
+                <li><a id="nav-news" class="navSP" href="#/updates">LANDSCAPING REPORT</a></li>  
+                <li><a id="nav-contact" class="navSP" href="#/add">ADD ITEM</a></li>
+            </ul>
+        </div>
+    <div id="main-container"> 
+        <!-- This is the black bar where all the social media links reside -->
+        <section class="social-media">
+            <div id="float-right">
+                <a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook-square sm">&nbsp </i></a>
+              </div>
+        </section>
+        <!-- This is the header where the image slider takes place -->
+        <section class="header-container">
+            <img id="img-header" src="images/Leeches-Header-Large.jpg"/>
+        </section>
+        <!-- Container for the navigation -->
+        <nav class="nav-container">
+        </nav>
+        <!-- Container for all the content resides -->
+        <div id="app"> 
+        </div>
+        <footer id="footer">
+            <div id="hruler"></div>
+            <div class="footer-container">
+                <div class="float-left"> 
+                    <a href="https://www.facebook.com/ " target="blank"><i class="fa fa-facebook-square">&nbsp </i></a> 
+                </div>
+                <div class="float-left" id="footer-text">
+                    <div>
+                    <ul>
+                        <li><a href="#/">HOME</a></li>    
+                        <li><a href="#/team">TEAM</a></li>
+                        <li><a href="#/report">LANDSCAPING REPORT</a></li>
+                        <li><a href="#/add">ADD REPORT</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="float-left" id="footer-text">
+                    <div>
+                    <ul>
+                        <li><a href="#/login">LOGIN</a></li>    
+                    </ul>
+                    </div>
+                </div>
+                <div id="notes">
+                    <div>
+                        <p id="notes-copyright"></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>   
+    
+    <script type="text/javascript" src="scripts/layout.js"></script>  
+    <script type="text/javascript" src="scripts/backboneModels.js"></script>
+    <script type="text/javascript" src="scripts/backboneViews.js"></script>
+    <script type="text/javascript" src="scripts/backboneCollections.js"></script>
+    <script type="text/javascript" src="scripts/backboneCollectionViews.js"></script>
+    <script type="text/javascript" src="scripts/backboneRouters.js"></script>
+  
+         
+</body>
+</html>
