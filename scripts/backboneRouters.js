@@ -23,18 +23,16 @@ router.on('route:Home', function() {
 router.on('route:Landscaping-Report', function() {
     navReset(); 
     //make ajax call to access diary.json
-    var getJSON = $.getJSON("./news.json");
-    getJSON.then(function(data) {
-        $.each(data, function(index, obj) {
-            //diaryJSON.push(obj);
-        });
-    }).then(function(){
-         
+    var getJSON = $.getJSON("report.json", (data)=>{ 
+    }).then(function(){ 
         $('.diary-collection-container').css({"margin-top": "20px"});
         var diaryCollectionView = new DiaryCollectionView({collection: diaryCollectionList}); 
         var dcv = diaryCollectionView.render().el;
         $('#app').html(dcv);
     });
+
+     
+    
     
 });
 
@@ -46,9 +44,18 @@ router.on('route:Team', function() {
 
 });
 
-router.on('route:Add', function() {
-    console.log("am I working?");
+router.on('route:Add', function() { 
     navReset();
+    //make ajax call to access diary.json
+    
+    var getJSON = $.get("/json");
+    getJSON.then(function(data) {
+        $.each(data, function(index, obj) {
+            //diaryJSON.push(obj);
+            console.log(data)
+        });
+    }); 
+
     var contactView = new ContactView();
     var cv = contactView.render().el;
     $('#app').html(cv);

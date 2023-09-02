@@ -18,7 +18,7 @@ var NavBarsView = Backbone.View.extend({
 var NavViewLarge = Backbone.View.extend({
     tagName: 'div',
     className: 'nav-menu-container',
-    template: _.template('<ul><li><a id="nav-home" href="#/">HOME</a></li><li><a id="nav-bar-menu" href="#/team">TEAM</a></li><li><a id="nav-bar-menu" href="#/report">LANDSCAPING REPORT</a></li><li><a id="nav-bar-menu" href="#/add">ADD</a></li></ul>'),
+    template: _.template('<ul><li><a id="nav-bar-menu" href="#/">HOME</a></li><li><a id="nav-bar-menu" href="#/team">TEAM</a></li><li><a id="nav-bar-menu" href="#/report">LANDSCAPING REPORT</a></li><li><a id="nav-bar-menu" href="#/add">ADD</a></li></ul>'),
     render: function(){
         this.$el.html(this.template());
         return this;
@@ -66,10 +66,9 @@ var ContactView = Backbone.View.extend({
     tagName: 'div',
     className: 'contact-container',
     template: _.template(
-        '<div id="contact-view">' +
-            '<div id="vruler1"></div>' +
+        '<div id="contact-view">' + 
             '<div id="contact-info">' +
-                '<form method="post" id="contact-f" enctype="multipart/form-data" action="/upload">' + 
+                '<form method="POST" id="contact-f" enctype="multipart/form-data" action="http://localhost:8000/upload">' + 
                 '<p>' + 
                     '<label for="title" class="contact-input-label">Caption</label><br/>' +  
                     '<input class="contact-input-text" name="title" type="text" maxlength="30" autofocus required />' + 
@@ -77,6 +76,14 @@ var ContactView = Backbone.View.extend({
                 '<p>' + 
                     '<label for="building" class="contact-input-label">Building Number</label> <br/>' + 
                     '<input class="contact-input-text" name="building" type="text" maxlength="40" required/>' +
+                '<p class="contact-input-label">Project Type</p>' + 
+                '<p>' +  
+                    '<input type="radio" class="contact-radio-text name="repair" value="Repair"></input>' + 
+                    '<label for="repair">Repair</label><br>' + 
+                '<p>' + 
+                '<p>' +  
+                    '<input type="radio" class="contact-radio-text name="design" value="Design"></input>' + 
+                    '<label for="design">Design</label><br>' + 
                 '<p>' + 
                     '<label for="image" class="contact-input-label">Upload Image</label> <br/>' +  
                     '<input class="contact-input-text" name="image" type="file" maxlength="30" required/></p>' + 
@@ -84,10 +91,11 @@ var ContactView = Backbone.View.extend({
                 '<p>' + 
                     '<label for="summary" class="contact-input-label">Summary</label> <br/>' + 
                     '<textarea class="contact-input-field" rows="4" cols="50" name="summary"></textarea>' + 
-                '</p>' + 
-                '<div id="contact-button"><p>Submit</p></div></form>' +
-            '</div>' +
-            '<div id="vruler2"></div>' +
+                '</p>' +   
+                '<button type="submit" form="contact-f" value="Submit">Submit</button>' +
+                '</form>' +
+                
+            '</div>' + 
          '</div>'
     ),
 
@@ -95,35 +103,7 @@ var ContactView = Backbone.View.extend({
         "click #contact-button": "postJSON"
     },
 
-    postJSON: function(){ 
-        var permission = true;
-            //$(this).find('[name]').each(function(i, data) {
-            $(':input').each(function(i, data){
-                //Get input fields and set key value variables
-                var that = $(this); 
-                var key = that.attr('name');
-                var value = that.val();
-                jsondata[key] = value;
-                //Security measures
-                var characters = ["/", "{", "}", "[", "]", "*", "&", "<", ">", "%", "$", "#", "(", ")", "=", "'", '"'];
-                for (var i = 0; i < value.length; i++) {
-                    for (var h = 0; h < characters.length; h++){
-                        if (value.slice(i, i+1) === characters[h]) {    
-                        permission = false;
-                        }
-                    } 
-                }
-
-            });
-     
-        if (permission === true){
-            contactphp();
-        }
-        if (permission === false) {
-            alert("For security reasons, please refrain from using the characters /, {}, [], *, &, %, $, #, (), =, and quotation marks.");
-        }
-        return false;
-    },    
+    
         render: function(){
             this.$el.html(this.template());
             return this;

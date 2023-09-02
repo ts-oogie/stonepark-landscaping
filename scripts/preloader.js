@@ -108,13 +108,7 @@ function preloaded(data) {
 }   
 
 //**** Copyright Year Function ****
-function copyright() {
-    var fullDate = new Date();
-    var getYear = fullDate.getFullYear();
-    var cr = "&copy Copyright " + getYear + " FilmKaravan Productions";
-    $('#notes-copyright').html(cr);
-    }
-copyright(); 
+ 
 
 //Set the whole date including month, date, year
 function thisDay() {

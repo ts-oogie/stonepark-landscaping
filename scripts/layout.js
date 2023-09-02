@@ -94,8 +94,7 @@ function adjustNav() {
           $navMenu.html(nvs);
           $('.nav-container').css({"position":"relative", "margin-top": winSmallNeg + 25});
           $('.nav-container li').css({"margin-top":"-15px"});
-          break;
-
+          break; 
 
         case "<320" :
           $('.nav-container').css({"position":"fixed", "margin-top": numToNegSmall + 20});

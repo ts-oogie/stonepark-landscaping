@@ -7,8 +7,7 @@
                 "location" : "Building 3000", 
                 "status" : "pending",
                 "type" : "safety",
-                "urgency" : 1,
-                "cost" : 0.00,
-                "p1" : "There is an area where the soil has eroded, exposing tree roots that may become a tripping hazard."
+                "urgency" : 1, 
+                "summary" : "There is an area where the soil has eroded, exposing tree roots that may become a tripping hazard."
         } 
 ]

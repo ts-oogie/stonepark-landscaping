@@ -16,11 +16,4 @@ var PreviewCollectionList = Backbone.Collection.extend({
 
 var previewCollectionList = new PreviewCollectionList();
 
-
-//DIARY COLLECTION LIST 
-var DiaryCollectionList = Backbone.Collection.extend({
-    model: DiaryModel
-});
-
-//Create a diary collection instance
-var diaryCollectionList = new DiaryCollectionList();
+ 
