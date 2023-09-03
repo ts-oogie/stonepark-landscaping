@@ -52,14 +52,63 @@ i {
 
 .nav-bars-container ul {
     margin-left: -10px;
+    margin-top : -1px;
 }
 
-#nav-bar-menu {
+.nav-bar-menu {
     margin-left: -5px;
     margin-right: 5px;
     font-size: 2.5rem;
     line-height: 45px;
 }
+
+.nav-menu-container {
+    margin-top: -18px;
+}
+
+.task-point {
+    position: absolute;
+    border: red solid 4px;
+    border-radius: 2px;
+    height: 8px;
+    width: 8px; 
+}
+
+.task-repair {
+    position: absolute;
+    border: yellow solid 4px;
+    border-radius: 2px;
+    height: 8px;
+    width: 8px; 
+}
+
+.task-removal {
+    position: absolute;
+    border: green solid 4px;
+    border-radius: 2px;
+    height: 8px;
+    width: 8px; 
+}
+
+.task-design {
+    position: absolute;
+    border: blue solid 4px;
+    border-radius: 2px;
+    height: 8px;
+    width: 8px; 
+}
+
+.task-other {
+    position: absolute;
+    border: grey solid 4px;
+    border-radius: 2px;
+    height: 8px;
+    width: 8px; 
+}
+
+
+
+
 
 #sidePanel {
     display: none;
@@ -171,11 +220,13 @@ body {
     color: white;
 }
 
-.header-container {
-    z-index: 300; 
+#header-container {
+    z-index: 30; 
+    display : block; 
+    position : relative;
 }
 
-.header-container img {
+#header-container img {
     width: 100%;
     height: auto;
     top: 0;
@@ -185,20 +236,16 @@ body {
     display: none;
 }
 
-#img-header img{
-    max-width: 1300px;
-    z-index: 0;
-}
-
+ 
 .nav-container {
-    position: relative; 
-    background-color: #31837c;
-    width: 100%;
+    position: fixed;  
+    background-color: black;
+    width: 101%;
     z-index: 200;
-    margin-top: -120px;
+    margin-top: 0px;
     height: 45px; 
-    opacity: .8;
-    padding-left: -10px;
+    opacity: .8; 
+    
 }
 
 .nav-bars-container {
@@ -903,6 +950,11 @@ li#amazonUK {
     font-family: Dosis; 
 }
 
+.contact-input-text-invisible {
+    border: 0px;
+    visibility: hidden;
+}   
+
 .contact-radio-text  {
     margin-left: 45px;
     padding-left : 5px;
@@ -927,6 +979,12 @@ li#amazonUK {
 .contact-input-label {
     margin-left: 35px;
     width: 200px;
+    border: 0px;
+}
+
+.contact-input-label-invisible {
+    visibility: hidden;
+    width: 100px;
     border: 0px;
 }
 
@@ -1471,7 +1529,7 @@ li#amazonUK {
     .index-container {
         margin-top: -175px;
     }
-    #nav-bar-menu {
+    .nav-bar-menu {
         font-size: 1.5rem;
     }
     .nav-container {

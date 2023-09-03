@@ -29,92 +29,9 @@ function setVars() {
 }
 setVars();
 
-//Resets the scrolltop when routes are called 
-function navReset() {
-    diaryJSON = [];
-    if (windowWidth <= 550) {
-        $(window).scrollTop(windowRatioPlus);
-        $('#app').css({"margin-top" : "100px"});
-    }
+ 
 
-    else if(windowTop >= windowRatio) {
-        $(window).scrollTop(windowRatioPlus);
-        $('#app').css({"margin-top" : "20px"});
-    }
-    adjustNav(); 
-}
-
-function adjustNav() {
-    switch (wWidthScroll(windowWidth, windowTop, windowRatio)) {
-        case ">550" :
-          $('.nav-container').css({"position":"fixed", "margin-top": numToNeg, "opacity":"1"});
-          $('.nav-container li').css({"margin-top":"-15px"});
-          break;
-        case "<=550" :
-          $('.nav-container').css({"position":"fixed", "margin-top": numToNegSmall});
-          $('.nav-container li').css({"margin-top":"-15px"});
-          $('#app').css({"margin-top" : "100px"});
-          break;
-        case "<=550+" :
-          var $navMenu = $('.nav-menu-container');
-          $navMenu.empty();
-          var navViewSmall = new NavViewSmall();
-          var nvs = navViewSmall.render().el;
-          $navMenu.html(nvs);
-          $('.nav-container').css({"position":"relative", "margin-top": winSmallNeg + 30});
-          $('.nav-container li').css({"margin-top":"-10px"});
-          break;
-
-        //HERE IS WHERE I LEFT OFF... COPY PATTERN FROM 375 and 375+
-        case "<=475" :
-          $('.nav-container').css({"position":"fixed", "margin-top": numToNegSmall + 9});
-          $('.nav-container li').css({"margin-top":"-10px"});
-          $('#app').css({"margin-top" : "100px"});
-          break;
-        case "<=475+" :
-          var $navMenu = $('.nav-menu-container');
-          $navMenu.empty();
-          var navViewSmall = new NavViewSmall();
-          var nvs = navViewSmall.render().el;
-          $navMenu.html(nvs);
-          $('.nav-container').css({"position":"relative", "margin-top": winSmallNeg + 30});
-          $('.nav-container li').css({"margin-top":"-10px"});
-          break;
-
-        case "<=375" :
-          $('.nav-container').css({"position":"fixed", "margin-top": numToNegSmall + 15});
-          $('.nav-container li').css({"margin-top":"-15px"});
-          $('#app').css({"margin-top" : "100px"});
-          break;
-        case "<=375+" :
-          var $navMenu = $('.nav-menu-container');
-          $navMenu.empty();
-          var navViewSmall = new NavViewSmall();
-          var nvs = navViewSmall.render().el;
-          $navMenu.html(nvs);
-          $('.nav-container').css({"position":"relative", "margin-top": winSmallNeg + 25});
-          $('.nav-container li').css({"margin-top":"-15px"});
-          break; 
-
-        case "<320" :
-          $('.nav-container').css({"position":"fixed", "margin-top": numToNegSmall + 20});
-          $('.nav-container li').css({"margin-top":"-15px"});
-          $('#app').css({"margin-top" : "100px"});
-          break;
-        case "<320+" :
-          var $navMenu = $('.nav-menu-container');
-          $navMenu.empty();
-          var navViewSmall = new NavViewSmall();
-          var nvs = navViewSmall.render().el;
-          $navMenu.html(nvs);
-          $('.nav-container').css({"position":"relative", "margin-top" : winSmallNeg + 25});
-          $('.nav-container li').css({"margin-top":"-10px"});
-          break;
-        default :
-           $('.nav-container').css({"position":"relative", "margin-top":"", "opacity":".8"});
-           $('.nav-container li').css({"margin-top":""});
-
-    }
+function adjustNav() { 
     if ((windowWidth <= 550) && (windowTop <= windowRatio)) {
         $('#app').css({"margin-top" : "20px"});
     }
@@ -131,89 +48,151 @@ function imageSlide() {
     //Get the number of elements pulled and save as variable
     var slideCount = slides.length; 
     //Create an empty array container
-    var slideSrc = [];
-
-   //Go through each of the slide elements 
-    slides.each(function(i, data){
-        //Get the src attribute for each slide element
-        imgSrc = data.src;
-        //Push each src onto the slideSrc array
-        slideSrc.push(imgSrc);
-    }); 
-    $.each(slideSrc, function(i, src){
-        setTimeout(function(){
-            var $imgheader = $('#img-header');
-            $imgheader.hide();
-            $imgheader.attr("src", src).fadeIn(500);     
-            }, 5000 * i);
-
-    });
+    var slideSrc = []; 
     
-}
+} 
 
-//**** CHECK WINDOW WIDTH Function ****//
-function wWidthScroll(ww, wt, wr) {
-    //if ww is greater than 550
-    if ((ww <= 320) && (wt >= wr)) {
-        return "<320";
-    }
-    if ((ww <= 320) && (wt <= wr)) {
-        return "<320+";
-    }
-    if (((ww > 320) && (ww <= 375)) && (wt >= wr)) {
-        return "<=375";
-    }
-    if (((ww > 320) && (ww <= 375)) && (wt <= wr)) {
-        return "<=375+";
-    }
-    if (((ww > 375) && (ww <= 475)) && (wt >= wr)) {
-        return "<=475";
-    }
-    if (((ww > 375) && (ww <= 475)) && (wt <= wr)) {
-        return "<=475+";
-    }
-    //if ww is less than or equal to 550 AND greater than 475
-    if (((ww <= 550) && (ww > 475)) && (wt >= wr)) {
-        return "<=550";
-    }
-    if (((ww <= 550) && (ww > 475)) && (wt <= wr)) {
-        return "<=550+";
-    }
-    if ((ww > 550) && (wt >= wr))  {
-        return ">550";
-    }
-}
+function clearBoxes(){
+  const boxes = document.querySelectorAll('.task-point'); 
+    boxes.forEach(box => {
+      box.remove();
+    }); 
+} 
 
-function closeSidePanel(e) { 
-  $('#sidePanel').css({"display":"none"});
-  /*$('#closeButton').click(function(){
-    return false;
-  }); */
-  setVars();
-  adjustNav();
-}
-
-
-$('.navSP').on('click', function(){
-  console.log("Done");
-  closeSidePanel();
-});
+$(document).ready(function (e) {
  
-/*
-$(window).on('scroll', function(){
-     $('#sidePanel').css({"height" : "100%"});
-     setVars();  
-     adjustNav();
+  setTimeout(()=>{
+
+    let url = 'http://localhost:8000/#/'
+    let homeUrl = url
+    let newUrl 
+
+    let id = 0
+    let projectArr = []  
+
+    let winWidth = $('#img-header').width()
+    let winHeight = $('#img-header').height()
+
+    alert("Please click on the map to indicate location")
+
+    let taskPoint = []
+    let percentWidth
+    let percentHeight
+    let screenLocked = false
+
+    if (window.performance) {
+        console.info("window.performance works fine on this browser");
+    }
+
+    //if browser reset  
+    console.info(performance.navigation.type);
+    if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+      setTimeout(()=>{
+        window.location.replace(url); 
+      }, 100) 
+    } else {
+      console.info( "This page is not reloaded");
+    } 
+ 
+  /* Here */
+    $.getJSON("/json", (result)=>{ 
+      
+        $.each(result, (index, data)=>{  
+          console.log(data.type)
+          let thisClass
+          if(data.type == "Repair"){
+            thisClass = 'task-repair'
+          }
+          else if(data.type == "Removal"){
+            thisClass = 'task-removal'
+          }
+          else if(data.type == "Design"){
+            thisClass = 'task-design'
+          }
+          else if(data.type == "Not Specified"){
+            thisClass = 'task-other'
+          }
+
+          id++
+          projectArr.push(data)  
+
+          $('#header-container').append('<a class="task-point-a"><div id="' + data.id + '" class="'+ thisClass + '" style="left:' + data.xPt*winWidth+ 'px; top:' + data.yPt*winHeight + 'px;"></div></a>')
+      })  
+    })  
+
+  //On Clicks ======>   
+  $("#home").on('click', (e)=>{
+
+    clearBoxes();
+
+    screenLocked = false 
+    window.location.reload();
+    newUrl = ''
+
+  })
+  //***************************Sept 3, 2023 */
+  //On click, selects id of target element selected
+  $(document).on('click', 'a.task-point-a', (e)=>{
+     alert(e.target.id)
+     //remember to subtract 1 from id 
+     //access projectArr[id-1]
+  })
+
+  $(document).on('click', 'input.contact-radio-text', (e)=>{
+    alert(e.target.name)
+    if(e.target.name == 'repair'){
+      $("#design").prop('checked', false)
+      $("#removal").prop('checked', false)
+    }
+    else if (e.target.name == 'design'){
+      $('#repair').prop('checked', false)
+      $('#removal').prop('checked', false) 
+    }
+    else if(e.target.name == 'removal'){
+      $('#repair').prop('checked', false)
+      $('#design').prop('checked', false) 
+    }
+  })
+
+  $('#img-header').on('click', (e)=>{   
+
+    if (screenLocked == false){ 
+
+        setTimeout(()=>{
+            alert("Scroll down and enter details in the fields below.")
+        },1000)
+        
+        newUrl = ''
+        newUrl = url + 'add' 
+        window.location.replace(newUrl); 
+    
+        percentWidth = e.pageX/winWidth
+        percentHeight = e.pageY/winHeight
+    
+        //append task-point marker
+        taskPoint.push((percentWidth)*winWidth)
+        taskPoint.push((((percentHeight*100))/100)*winHeight)
+        $('#header-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + taskPoint[0] + 'px; top:' + taskPoint[1] + 'px;"></div>')
+    
+        //reset variables and lock screen until form submit complete
+        setTimeout(()=>{
+            $('#contact-f').append('<input id="inputX" value="' + percentWidth + '" class="contact-input-text-invisible" name="xPt" type="text" maxlength="30"  />')
+            $('#contact-f').append('<input id="inputY" value="' + percentHeight + '" class="contact-input-text-invisible" name="yPt" type="text" maxlength="30"  />')
+            $('#contact-f').append('<input id="inputI" value="' + (id+1) + '" class="contact-input-text-invisible" name="index" type="text" maxlength="30"  />')
+        }, 1000)  
+
+        setTimeout(()=>{
+            taskPoint = []
+            percentWidth = ""
+            percentHeight = ""
+            screenLocked = true  
+        }, 1500)   
+
+    } 
+  })
+  }, 1000)
+  
 });
 
-//**** Window Re-size Funtion ****
-$(window).on('resize', function(){ 
-    location.reload();
-    checkWin();
-    navReset(); 
-    windowRatio = (winWidth / 3.25) - 10;
-    var imgHeight = (winWidth / 3.25) + 13;
-    if (winScroll >= windowRatio) {
-        $(window).scrollTop(imgHeight);
-    } 
-});*/
+ 
+ 

@@ -8,8 +8,7 @@ const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, 'images')
     },
-    filename: (req, file, cb) => {
-        console.log(file.originalname)
+    filename: (req, file, cb) => { 
         cb(null, Date.now() + path.extname(file.originalname))
     }
 });
@@ -29,8 +28,7 @@ app.use('/styles', express.static(__dirname + '/styles'));
 app.use('/scripts', express.static(__dirname + '/scripts'));
 
 app.use('/bower_components', express.static(__dirname + '/bower_components'));   
-app.use('/node_modules', express.static(__dirname + '/node_modules')); 
-
+app.use('/node_modules', express.static(__dirname + '/node_modules'));  
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -48,14 +46,75 @@ app.get('/json', (req, res)=>{
 })
 
 app.post('/upload', upload.any(), (req, res)=>{
-    let thisRes = req.body
-    console.log(req.body) 
-    //open report.json
-    res.send("HELLO")
-    //read through each
-})
+    let formData = req.body
+    let imgPath = req.files[0].path 
 
-console.log("App running at :" + process.env.PORT)
+    let thisObj = {
+        id: "",
+        title: "",
+        building: "",
+        type: "",
+        summary: "",
+        imgUrl: "",
+        xPt: "",
+        yPt: ""
+    }
+
+    thisObj.id =formData.index
+    thisObj.title = formData.title
+    thisObj.building = formData.building
+
+    if (formData.design == undefined && formData.repair == undefined && formData.removal == undefined) {
+        thisObj.type = "Not Specified"
+    }
+    if (formData.repair){
+        thisObj.type = "Repair"
+    }
+    if (formData.design){
+        thisObj.type = "Design"
+    }
+    if (formData.removal){
+        thisObj.type = "Removal"
+    }
+
+    thisObj.summary = formData.summary
+    thisObj.imgUrl = imgPath
+    thisObj.xPt = formData.xPt
+    thisObj.yPt = formData.yPt
+    console.log(thisObj)
+
+    const report = require('./report.json');
+
+    console.log(report) 
+
+    report.push(thisObj)
+    
+    let jsonString = JSON.stringify(report) 
+
+    console.log(jsonString)
+
+     
+    fs.writeFile('report.json', jsonString , function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+    });  
+
+    res.sendFile(__dirname + '/submitted.html')
+              
+            // create new file submitted.html that has text stating item was saved and has no navigation
+            // url is redirected to /upload 
+            // node res.send(submitted.html)
+            //add setTimeout and change url to # => home.html and the cycle starts over
+
+      //home.html -> document.ready :
+            //send a fetch to //json
+            //$.each :
+                //get the id 
+                //get number coordinates
+                //append to
+
+
+}) 
 
 app.listen(port, ()=>{
     console.log("Server running on port 3000")

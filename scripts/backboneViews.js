@@ -1,64 +1,29 @@
-//**** NAV BAR VIEW(s)****
-var NavBarsView = Backbone.View.extend({
-    tagName: 'div',
-    className: 'nav-bars-container',
-    template: _.template('<ul>' +
-        '<li><a id="nav-bar-menu" href="#/">HOME</a></li>' + 
-        '<li><a id="nav-bar-menu" href="#/team">TEAM</a></li>' +
-        '<li><a id="nav-bar-menu" href="#/report">LANDSCAPING REPORT</a></li>' +
-        '<li><a id="nav-bar-menu" href="#/contact">ADD</a></li>' +
-        '</ul>'
-        ),
-    render: function(){
-        this.$el.html(this.template());
-        return this;
-    }
-});
-
-var NavViewLarge = Backbone.View.extend({
-    tagName: 'div',
-    className: 'nav-menu-container',
-    template: _.template('<ul><li><a id="nav-bar-menu" href="#/">HOME</a></li><li><a id="nav-bar-menu" href="#/team">TEAM</a></li><li><a id="nav-bar-menu" href="#/report">LANDSCAPING REPORT</a></li><li><a id="nav-bar-menu" href="#/add">ADD</a></li></ul>'),
-    render: function(){
-        this.$el.html(this.template());
-        return this;
-    }
-});
-
-var NavViewSmall = Backbone.View.extend({
-    tagName: 'div',
-    className: 'nav-menu-container',
-    template: _.template('<a href=""><i id="nav-bars" class="fa fa-bars">&nbsp</i></a>'),
-    events: {
-        "click #nav-bars" : "showSidePanel"
-    },
-    showSidePanel: function(e) {
-        e.preventDefault();
-        //Empty the navMenu div 
-        var $navMenu = $('.nav-container'); 
-        $('#sidePanel').css({"display" : "block"}); 
-        $('.nav-container li').css({"margin-top" : "-10px"});
-    },
-    render: function(){
-        this.$el.html(this.template());
-        return this;
-    }
-});
 
 //**** Index View ****
 var IndexView = Backbone.View.extend({
     tagName: 'div',
     className: 'index-container',
     template: _.template('<section id="index-container">' +        
-            '<br/><iframe id="vimeo-frame" src="https://player.vimeo.com/video/132404733" width="100%" height="390" frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p id="index-center"><a href="https://vimeo.com/132404733">Leeches Teaser</a> from <a href="https://vimeo.com/user2912300">Payal Sethi</a> on <a href="https://vimeo.com">Vimeo</a>.</p><br/><br/><br/><br/><br/>' +
-    '</section>'), 
+     '</section>'), 
     render: function(){
         view = this.model.toJSON();
         this.$el.html(this.template(view));
         return this;
     }
-});
- 
+}); 
+
+//**** Index View ****
+var UploadView = Backbone.View.extend({
+    tagName: 'div',
+    className: 'index-container',
+    template: _.template('<section id="index-container">' +        
+     '</section>'), 
+    render: function(){
+        view = this.model.toJSON();
+        this.$el.html(this.template(view));
+        return this;
+    }
+}); 
 
 // **** CONTACT VIEW ****
 //On Submit, run a function that serializes the JSON data and sends to the server
@@ -68,7 +33,7 @@ var ContactView = Backbone.View.extend({
     template: _.template(
         '<div id="contact-view">' + 
             '<div id="contact-info">' +
-                '<form method="POST" id="contact-f" enctype="multipart/form-data" action="http://localhost:8000/upload">' + 
+                '<form method="POST" id="contact-f" enctype="multipart/form-data" action="http://localhost:8000/upload">' +
                 '<p>' + 
                     '<label for="title" class="contact-input-label">Caption</label><br/>' +  
                     '<input class="contact-input-text" name="title" type="text" maxlength="30" autofocus required />' + 
@@ -77,13 +42,17 @@ var ContactView = Backbone.View.extend({
                     '<label for="building" class="contact-input-label">Building Number</label> <br/>' + 
                     '<input class="contact-input-text" name="building" type="text" maxlength="40" required/>' +
                 '<p class="contact-input-label">Project Type</p>' + 
-                '<p>' +  
-                    '<input type="radio" class="contact-radio-text name="repair" value="Repair"></input>' + 
-                    '<label for="repair">Repair</label><br>' + 
+                '<p>' +  //Input Button - repair
+                    '<input type="radio" id="repair" class="contact-radio-text" name="repair" value="Repair"></input>' + 
+                    '<label for="repair">Building Repair</label><br>' + 
                 '<p>' + 
-                '<p>' +  
-                    '<input type="radio" class="contact-radio-text name="design" value="Design"></input>' + 
-                    '<label for="design">Design</label><br>' + 
+                '<p>' +  //Input Button - design
+                    '<input type="radio" id="design" class="contact-radio-text" name="design" value="Design"></input>' + 
+                    '<label for="design">Landscape Design</label><br>' + 
+                '<p>' + 
+                '<p>' +  //Input button - removal
+                    '<input type="radio" id="removal" class="contact-radio-text" name="removal" value="Removal"></input>' + 
+                    '<label for="removal">Landscape Removal</label><br>' + 
                 '<p>' + 
                     '<label for="image" class="contact-input-label">Upload Image</label> <br/>' +  
                     '<input class="contact-input-text" name="image" type="file" maxlength="30" required/></p>' + 
@@ -92,28 +61,23 @@ var ContactView = Backbone.View.extend({
                     '<label for="summary" class="contact-input-label">Summary</label> <br/>' + 
                     '<textarea class="contact-input-field" rows="4" cols="50" name="summary"></textarea>' + 
                 '</p>' +   
-                '<button type="submit" form="contact-f" value="Submit">Submit</button>' +
-                '</form>' +
-                
+                '<button type="submit" form="contact-f" value="Submit">Submit</button>' + 
+                '</form>' + 
             '</div>' + 
          '</div>'
     ),
 
     events: {
         "click #contact-button": "postJSON"
-    },
-
-    
-        render: function(){
-            this.$el.html(this.template());
-            return this;
-        }
-});
-  
-
-
+    }, 
+    render: function(){
+        this.$el.html(this.template());
+        return this;
+    }
+}); 
     
 //**** LOGIN NAVIGATION BAR VIEW ****
+/*
 var LoginNavView = Backbone.View.extend({
     tagName: 'div',
     className: 'login-nav-container',
@@ -148,9 +112,7 @@ var LoginModelView = Backbone.View.extend({
         this.$el.html(this.template());
         return this;
     }
-});
- 
-  
+}); */
 
 var TeamView = Backbone.View.extend({
     tagName: 'div',

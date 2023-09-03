@@ -15,6 +15,15 @@
         <script type="text/javascript" src="scripts/preloader.js"></script> 
     </head>
     <body> 
+    <nav class="nav-container">
+        <div class="nav-bars-container"> 
+        <ul>
+            <li><a class="nav-bar-menu" id="home"  href="#/">START OVER</a></li>
+            <li><a class="nav-bar-menu" id="team"  href="#/team">TEAM</a></li>
+            <li><a class="nav-bar-menu" id="report"  href="#/report">PROJECT STATUS REPORT</a></li>
+            <li><a class="nav-bar-menu" id="about"  href="#/about">About</a></li>
+        </ul>
+    </nav>
     <div id="image-loader">
         <ul>
             <!--<li><img src="images/lsfilm-Header-1-Large.jpg" onload="preloaded('A')"/></li>-->
@@ -42,21 +51,18 @@
         </div>
     <div id="main-container"> 
         <!-- This is the black bar where all the social media links reside -->
-        <section class="social-media">
-            <div id="float-right">
-                <a href="https://github.com/ts-oogie/stonepark-landscaping" target="blank"><i class="fa fa-github-square sm">&nbsp </i></a>
-              </div>
-        </section>
+         
         <!-- This is the header where the image slider takes place -->
-        <section class="header-container">
+        <section id="header-container">
             <img id="img-header" src="images/Leeches-Header-1-Large.jpg"/>
         </section>
         <!-- Container for the navigation -->
-        <nav class="nav-container">
-        </nav>
+        
         <!-- Container for all the content resides -->
         <div id="app"> 
         </div>
+         <!-- Container for invisible form elements -->
+      
         <footer id="footer">
             <div id="hruler"></div>
             <div class="footer-container">

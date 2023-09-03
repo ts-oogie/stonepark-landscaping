@@ -4,7 +4,8 @@ var Router = Backbone.Router.extend({
         "": 'Home',
         "team": 'Team',
         "report": 'Landscaping-Report',
-        "add": 'Add' 
+        "add": 'Add',
+        "upload" : 'Upload' 
     }
 });                     
 
@@ -12,16 +13,15 @@ var router = new Router();
 
 //HOME
 router.on('route:Home', function() {
-    navReset(); 
+    
     $('.index-container').css({"margin-top": "50px"});
     var indexView = new IndexView({model: indexModel});
     var iv = indexView.render().el;
     $('#app').html(iv);
-});
- 
+}); 
  
 router.on('route:Landscaping-Report', function() {
-    navReset(); 
+     
     //make ajax call to access diary.json
     var getJSON = $.getJSON("report.json", (data)=>{ 
     }).then(function(){ 
@@ -29,37 +29,37 @@ router.on('route:Landscaping-Report', function() {
         var diaryCollectionView = new DiaryCollectionView({collection: diaryCollectionList}); 
         var dcv = diaryCollectionView.render().el;
         $('#app').html(dcv);
-    });
-
-     
-    
-    
+    }); 
 });
 
 router.on('route:Team', function() {
-    navReset();
+    
     var teamView = new TeamView();
     var tv = teamView.render().el;
-    $('#app').html(tv);
-
+    $('#app').html(tv); 
 });
 
 router.on('route:Add', function() { 
-    navReset();
-    //make ajax call to access diary.json
     
+    //make ajax call to access diary.json 
     var getJSON = $.get("/json");
     getJSON.then(function(data) {
         $.each(data, function(index, obj) {
             //diaryJSON.push(obj);
             console.log(data)
         });
-    }); 
-
+    });  
     var contactView = new ContactView();
     var cv = contactView.render().el;
-    $('#app').html(cv);
+    $('#app').html(cv); 
+});
 
+router.on('route:Upload', function() {
+   
+    //render map on screen
+    let uploadView = new UploadView();
+    let uv = uploadView.render().el;
+    $('#app').html(tv); 
 });
 /*
 

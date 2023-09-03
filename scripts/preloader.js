@@ -73,26 +73,14 @@ function checkWin() {
         var src = "images/Leeches-Header-5-Small.jpg"
         $('.header-container').css({"height" : headHeight});
         var $imgheader = $('#img-header');
-        $imgheader.attr("src", src);
-        $(document).ready(function(){
-            var navViewSmall = new NavViewSmall();
-            var nvs = navViewSmall.render().el;
-            $('.nav-container').html(nvs); 
-            $(window).scrollTop(0);
-        });
-        
+        $imgheader.attr("src", src);  
     }
     //if the window width is greater than or equal to 550 
     //Run the imagefade slider
     //Create a new Nav View for the large version
     else if(winWidth >= 550) {
         imageSlide();
-        $('.nav-container').css({"height" : "45px"});
-        $(document).ready(function(){
-            var navViewLarge = new NavViewLarge();
-            var nvl = navViewLarge.render().el;
-            $('.nav-container').html(nvl);
-        });
+        $('.nav-container').css({"height" : "45px"}); 
     }
     
 }
@@ -136,14 +124,5 @@ thisDay();
 
 
 function urlReload() {
-    $(document).ready(function(){
-    //Check if the current URL contains '#'
-        if(document.URL.indexOf("#")==-1) {
-            // Set the URL to whatever it was plus "#".
-            url = document.URL+"#";
-            location = "#";
-            //Reload the page
-            location.reload(true);
-        }
-    });
+   
 }
