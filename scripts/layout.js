@@ -207,8 +207,8 @@ $(document).ready(function(e) {
                           '<p>President : Patrick J.</p>' + 
                           '<p>HMS Manager : Rachel</p>' + 
                           '<p>SYA Contractor : Evan</p>' +
-                          '<p>Volunteer : Mary</p>' +
                           '<p>Volunteer : Skipper</p>' +
+                          '<p>Volunteer : Mary</p>' + 
                           '<p>Volunteer : Lynn</p>' +
                           '<p>Volunteer : Gregory</p>' + 
                           '<p>Volunteer : Melissa</p>' + 
