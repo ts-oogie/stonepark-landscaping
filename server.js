@@ -91,28 +91,14 @@ app.post('/upload', upload.any(), (req, res)=>{
     
     let jsonString = JSON.stringify(report) 
 
-    console.log(jsonString)
-
+    console.log(jsonString) 
      
     fs.writeFile('report.json', jsonString , function (err) {
         if (err) throw err;
         console.log('Saved!');
     });  
 
-    res.sendFile(__dirname + '/submitted.html')
-              
-            // create new file submitted.html that has text stating item was saved and has no navigation
-            // url is redirected to /upload 
-            // node res.send(submitted.html)
-            //add setTimeout and change url to # => home.html and the cycle starts over
-
-      //home.html -> document.ready :
-            //send a fetch to //json
-            //$.each :
-                //get the id 
-                //get number coordinates
-                //append to
-
+    res.sendFile(__dirname + '/submitted.html') 
 
 }) 
 
