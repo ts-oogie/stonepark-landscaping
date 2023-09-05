@@ -1,3 +1,3 @@
 setTimeout(()=>{
-    window.location.replace("http://localhost:8000/#/"); 
+    window.location.replace("https://stoneparklandscaping-de6e42b530c0.herokuapp.com/#/"); 
 }, 2000)
