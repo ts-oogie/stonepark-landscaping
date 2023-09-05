@@ -7,6 +7,12 @@ var IndexModel = Backbone.Model.extend({
 var indexModel = new IndexModel({    
 });
 
+var AboutModel = Backbone.Model.extend({
+    defaults: {}
+});
+
+var AboutModel = new AboutModel({});
+
 //**** SYNOPSIS MODEL ****
 var SynopsisModel = Backbone.Model.extend({
     defaults: {} 

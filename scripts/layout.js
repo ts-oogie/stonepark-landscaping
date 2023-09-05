@@ -59,7 +59,7 @@ function clearBoxes(){
     }); 
 } 
 
-$(document).ready(function (e) {
+$(document).ready(function(e) { 
  
   setTimeout(()=>{
 
@@ -71,9 +71,12 @@ $(document).ready(function (e) {
     let projectArr = []  
 
     let winWidth = $('#img-header').width()
-    let winHeight = $('#img-header').height()
+    let winHeight = $('#img-header').height() 
 
-    alert("Please click on the map to indicate location")
+    if (window.sessionStorage.getItem("pageLoaded") == null){
+          window.sessionStorage.setItem("pageLoaded", true)
+          alert("Please click on the map to create new project location")
+    } 
 
     let taskPoint = []
     let percentWidth
@@ -87,10 +90,21 @@ $(document).ready(function (e) {
     //if browser reset  
     console.info(performance.navigation.type);
     if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-      setTimeout(()=>{
+
+      $('#overlaycontainer').css('width', '85%')
+      $('#overlay-app').empty()
+      $('#overlaycontainer').css('visibility', 'hidden' );
+
+      $('#overlaycontainer2').css('width', '85%')
+      $('#overlay-form').empty()
+      $('#overlaycontainer2').css('visibility', 'hidden' );
+
+      setTimeout(()=>{ 
         window.location.replace(url); 
       }, 100) 
-    } else {
+
+    } 
+    else {
       console.info( "This page is not reloaded");
     } 
  
@@ -117,10 +131,21 @@ $(document).ready(function (e) {
           projectArr.push(data)  
 
           $('#header-container').append('<a class="task-point-a"><div id="' + data.id + '" class="'+ thisClass + '" style="left:' + data.xPt*winWidth+ 'px; top:' + data.yPt*winHeight + 'px;"></div></a>')
-      })  
+     
+        })  
     })  
 
   //On Clicks ======>   
+
+  $('#overlaycontainer').on('click',  function(e){  
+      $('#overlaycontainer').css('width', '85%')
+      $('#overlay-app').empty()
+      $('#overlaycontainer').css('visibility', 'hidden' ); 
+      $('#overlaycontainer').scrollTop(0)
+      screenLocked = false
+      window.location.replace(url);  
+  });
+
   $("#home").on('click', (e)=>{
 
     clearBoxes();
@@ -132,14 +157,71 @@ $(document).ready(function (e) {
   })
   //***************************Sept 3, 2023 */
   //On click, selects id of target element selected
-  $(document).on('click', 'a.task-point-a', (e)=>{
-     alert(e.target.id)
-     //remember to subtract 1 from id 
-     //access projectArr[id-1]
+  $(document).on('click', 'a.task-point-a', (e)=>{ 
+ 
+    $('#overlaycontainer').css('visibility', 'visible' );
+      
+    $('#overlay-app').html(  
+        '<div class="overlayBG">' + 
+            '<h1>' + projectArr[e.target.id-1].title + '</h1>' +
+        '</div>' +
+        '<h2>Closest Building : ' + projectArr[e.target.id-1].building + '<h2>' +
+        '<h2>Type : ' + projectArr[e.target.id-1].type + '<h2>' +
+        '<h2>' + projectArr[e.target.id-1].summary + '</h2>' +
+        '<div id="more">' +  
+              '<h3 id="moreLink">Close</h3>' +  
+        '</div>'  +
+        '<img class="overlayImg" src="' + projectArr[e.target.id-1].imgUrl + '" />' 
+    );
   })
 
+  $(document).on('click', 'button#cancel', ()=>{
+
+      let thisEl = id+1
+      let thisStr = thisEl.toString()
+      
+      $('#overlaycontainer2').css('width', '85%')
+      $('#overlay-form').empty()
+      $('#overlaycontainer2').css('visibility', 'hidden' ); 
+      
+      $('#overlaycontainer').css('width', '85%')
+      $('#overlay-app').empty()
+      $('#overlaycontainer').css('visibility', 'hidden' );
+      document.getElementById(thisStr).remove()
+      screenLocked = false
+      window.location.replace(url);  
+  }) 
+
+  $('#team').on('click', (e)=>{
+
+      $('#overlaycontainer').css('visibility', 'visible');
+      $('#overlaycontainer').css('width', '50%')
+
+      $('#overlay-app').html( 
+        '<div class="cast-view">' +
+            '<div id="more">' +  
+                   '<h3 id="moreLink">Close</h3>' +  
+            '</div>'  +
+            '<h2>MEMBERS</h2>' + 
+                '<div id="crew-center">' + 
+                          '<p>President : Patrick J.</p>' + 
+                          '<p>HMS Manager : Rachel</p>' + 
+                          '<p>SYA Contractor : Evan</p>' +
+                          '<p>Volunteer : Mary</p>' +
+                          '<p>Volunteer : Skipper</p>' +
+                          '<p>Volunteer : Lynn</p>' +
+                          '<p>Volunteer : Gregory</p>' + 
+                          '<p>Volunteer : Melissa</p>' + 
+               
+                '</div>'  
+         );
+
+  })
+
+  
+
   $(document).on('click', 'input.contact-radio-text', (e)=>{
-    alert(e.target.name)
+    
     if(e.target.name == 'repair'){
       $("#design").prop('checked', false)
       $("#removal").prop('checked', false)
@@ -154,17 +236,22 @@ $(document).ready(function (e) {
     }
   })
 
-  $('#img-header').on('click', (e)=>{   
+  $('#img-header').on('click', (e)=>{    
 
     if (screenLocked == false){ 
 
         setTimeout(()=>{
-            alert("Scroll down and enter details in the fields below.")
+
+          if (window.sessionStorage.getItem("pageClicked") == null){
+              window.sessionStorage.setItem("pageClicked", true)
+              alert("Scroll down and enter details in the fields below.")
+          } 
+            
         },1000)
         
         newUrl = ''
         newUrl = url + 'add' 
-        window.location.replace(newUrl); 
+        window.location.replace(newUrl);  
     
         percentWidth = e.pageX/winWidth
         percentHeight = e.pageY/winHeight

@@ -21,11 +21,11 @@ a {
     text-decoration: none;
     font-family: Tulpen One, helvetica, sans-serif;
     font-size: 2.5rem;
-    color: white;
+    color: #ffffe4;
 }
 
 a.social-media {
-    color: white;
+    color: #ffffe4;
 }
 
 a:hover {
@@ -38,7 +38,7 @@ i {
 
 #nav-bars {
     line-height: 45px;
-    color: white;
+    color: #ffffe4;
     font-size: 1.75rem;
     margin-left: -40px;
 }
@@ -134,19 +134,68 @@ i {
 
 h1 {
     padding-left: 10px;
-    color: white;
+    color: #ffffe4;
     margin-top: 20px;
     font-family: Tulpen One;
-    font-size: 1.75rem;
-    line-height: 5px;
+    font-size: 3rem;
+    line-height: 5px;  
+}
+
+.overlayBG {
+    background-color: black;
+    display : block;
+    width: 85%;
+    margin: auto;
+    width: 50%; 
+    height: 50px; 
+    margin-bottom : 30px;
+}
+
+#more {
+    border : 1px solid black;
+    width : 80px;
+    border-radius : 25px;
+    height : 30px;
+    display : block;
+    position : relative;
+    margin-left : auto;
+    margin-right : auto; 
+    margin-top : 25px;
+    margin-bottom : 35px; 
+    background-color : greenyellow;
+    cursor: pointer;
+}   
+
+#moreLink {
+    display : inline-block;
+    position : relative;
+    line-height : 30px;
+    vertical-align: middle;
+    margin-top : 0px;
+    float : left;
+    color : black;
+    font-size : 1.5rem;
+    margin-left : 5px; 
+    cursor: pointer;
+}
+
+h3#moreLink {
+    color: black; 
+    font-family: Tulpen One;
+}
+
+ 
+
+.overlayBG h1 {
+    line-height: 50px;
 }
 
 h2 {
     padding-left: 10px;
-    color: white;
+    color: #ffffe4;
     margin-top: 10px;
     font-family: Tulpen One;
-    font-size: 1.2rem;
+    font-size: 2.1rem;
     line-height: 5px;
 }
 
@@ -160,7 +209,7 @@ h3{
 }
 
 p {
-    color: white;
+    color: #ffffe4;
     font-size: 1.25rem;
     font-family: Dosis;
     padding-left: 10px;
@@ -179,7 +228,7 @@ body {
 
 .divhr {
     height: 1px;
-    border: 2px solid white;
+    border: 2px solid #ffffe4;
     width: 100%;
 }
 
@@ -217,7 +266,7 @@ body {
     margin-top: 0px;
     font-size: 1.5rem;
     line-height: 25px;
-    color: white;
+    color: #ffffe4;
 }
 
 #header-container {
@@ -276,55 +325,79 @@ body {
 #nav-bars {
     padding-left: 60px;
 }
- 
-
-.facebook {
-    color: white;
-}
-
-.linkedin {
-    color: white;
-}
-
-.twitter {
-    color: white;
-}
-
-#admin-diary {
-    color: black;
-}
-
-#admin-news {
-    color: black;
-}
+  
 
 #overlaycontainer {
-  display: none;
-  height: 75%;
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  height: 85%;
   width: 80%;
-  left: 50%;
-  position: fixed;
-  z-index: -100;
+  left: 50%; 
+  z-index: 100;
   margin: 0 0 0 -40%;
   margin-top: 5%; 
+  overflow: scroll;  
+  border: 10px solid white;
+  background-color: grey;
+  border-radius : 20px; 
+}
+
+#overlaycontainer2 {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    height: 90%;
+    width: 80%;
+    left: 50%; 
+    z-index: 100;
+    margin: 0 0 0 -40%;
+    margin-top: 3%; 
+    overflow: scroll;  
+    border: 10px solid white;
+    background-color: grey;
+    border-radius : 20px; 
+  }
+
+p.contact-input-label {
+    margin-left: 235px;
 }
 
 #overlay-app {
   overflow: auto;
   height: 100%;
   width: 100%;
-  padding: 5px 5px 3px 5px;
   text-align: center;
-  background-color: #170503;
+
+  padding: 5px 5px 3px 5px;
+  margin: 0px; 
+  background-color: grey;
   display: block;
-  position: relative;  
-  border: 1px solid white;
+  position: relative;    
 }
 
+#overlay-form {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  
+    padding: 5px 5px 3px 5px;
+    margin: 0px; 
+    background-color: grey;
+    display: block;
+    position: relative;    
+  }
+
 #overlay-nav {
-    margin-top: -10px;
-    background-color: #841a02;
-    height: 40px;
+    margin-top: -30px;
+    background-color: black;
+    height: 50px;
+    width: 101%;
+    position: absolute;
+    display: inline-block;
 }
 
 #vertical-div {
@@ -332,7 +405,7 @@ body {
     vertical-align: center;
     height: 15px;
     top: 5px;
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
 }
 
 #overlay-nav li {
@@ -350,18 +423,26 @@ body {
     margin-right: 10px;
 }
 
-.diary-collection-container {
-    padding-top: 32px;
-    margin: 0 auto;
-    max-width: 900px; 
-    margin-bottom: 80px;
+ 
+ 
+.overlayImg {
+    margin-top : -50px;
+    margin: 0;
+    position: relative;
+    top: 0%;
+    max-width : 90%;
+    padding-bottom: 20px; 
 }
 
-.diary-model-container {
+.overlayText {
+    margin: 0;
     position: relative;
-    display: inline-block;
-    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
+    margin-top : 20px;
 }
+ 
 
 .diary-model-container img {
     margin-bottom: 25px; 
@@ -370,55 +451,7 @@ body {
     float: left; 
     margin-left: 10px;
 }
-
-
-.diary-model-container hr {
-    color: #31837c;
-    background-color : #31837c;
-    height: 2.75px;
-    border: none;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.diary-model-container p {
-    display: inline-block;
-    margin-top: 0px;
-    margin-bottom: 25px;
-    float: left;
-    max-width: 500px;
-}
-
-.diary-model-container h1  {
-    color: #923031;
-    font-family: Dosis;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    line-height: 30px;
-}
-
-.diary-model-container h3  {
-    margin-top: 15px;
-}
-
-.diary-model-img {
-    border: white solid 5px;
-}
-
-.diary-model-img-blank {
-    border : 0px solid white;
-}
-
-
-#diary-edit-p1 {
-    height: 100px;
-    width: 400px;
-    margin-top: 10px;
-    font-size: 1rem;
-    position: relative;
-    display: inline-block;
-}
-
+  
 #news-edit-p1 {
     height: 100px;
     width: 400px;
@@ -445,28 +478,14 @@ body {
     position: relative;
     display: inline-block;
 }
-
-#diary-edit-title {
-    width: 300px;
-    font-size: 1rem;
-    position: relative;
-    display: inline-block;
-}
-
+ 
 #news-edit-title {
     width: 300px;
     font-size: 1rem;
     position: relative;
     display: inline-block;
 }
-
-#diary-edit-image {
-    width: 300px;
-    font-size: 1rem;
-    position: relative;
-    display: inline-block;
-}
-
+ 
 #news-edit-image {
     width: 300px;
     font-size: 1rem;
@@ -474,49 +493,37 @@ body {
     display: inline-block;
 }
 
-.diary-add {
-    border: 1px solid white;
-    height: 20px;
-    width: 150px;
-    display: inline-block;
-    margin: -10px auto 0px auto;
-    background-color: #841a02;
-}
+ 
 
 .news-add {
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
     height: 20px;
     width: 150px;
     display: inline-block;
     margin: -10px auto 0px auto;
     background-color: #841a02;
 }
-
-.diary-add p {
-    margin: 0px 0px;
-    font-size: 1rem;
-}
+ 
 
 .news-add p {
     margin: 0px 0px;
     font-size: 1rem;
 }
-
-
-#diary-article-preview {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-}
-
+ 
 #news-article-preview {
     display: inline-block;
     position: relative;
     width: 100%;
 }
+ 
+
+#submit {
+    margin-bottom: 25px;
+    margin-left: 300px;
+}
 
 #submit-diary {
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
     height: 30px;
     width: 100px;
     display: inline-block;
@@ -525,7 +532,7 @@ body {
 }
 
 #submit-news {
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
     height: 30px;
     width: 100px;
     display: inline-block;
@@ -544,7 +551,7 @@ body {
 }
 
 #preview-diary {
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
     height: 30px;
     width: 100px;
     display: inline-block;
@@ -553,7 +560,7 @@ body {
 }
 
 #preview-news {
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
     height: 30px;
     width: 100px;
     display: inline-block;
@@ -579,7 +586,7 @@ body {
 }
 
 #submit-login {
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
     height: 30px;
     width: 100px;
     display: inline-block;
@@ -653,7 +660,7 @@ body {
 }
 
 #synopsis-view img {
-    border: white solid 5px;
+    border: #ffffe4 solid 5px;
 }
 
 #synopsis-img {
@@ -667,7 +674,7 @@ body {
 
 #synopsis p { 
 
-    color: white;
+    color: #ffffe4;
     font-family: helvetica;
     font-size: 1.1rem;
 }
@@ -700,10 +707,21 @@ body {
 }
 
 .cast-view {
-    position: relative;
-    width: 100%;  
-    clear: both;
-    padding-left: 10px;
+    margin: auto;
+    width: 50%; 
+    padding: 10px;
+}
+
+#crew_1 {
+    margin: auto;
+    width: 50%; 
+    padding: 10px; 
+    border: 1px solid green;
+} 
+#crew-center {
+    margin: auto;
+    width: 50%; 
+    padding: 10px;  
 }
 
 .cast-view h2 {
@@ -717,6 +735,9 @@ body {
     line-height: 10px;
     margin-top: -10px;
     margin-bottom: 30px;
+    border: 1px solid green; 
+    display : block;
+    min-width : 400px;;
 }
 
 .cast-view-col-2 {
@@ -725,6 +746,8 @@ body {
     line-height: 10px;
     margin-top: -10px;
     margin-bottom: 30px;
+    border: 1px solid green;
+    display : inline-block;
 }
 
 /***** NEWS *****/
@@ -858,8 +881,11 @@ li#amazonUK {
 #contact-info {
     float: left;
     height: 100%;
-    min-width: 300px;
-    display: inline-block; 
+    min-width: 300px; 
+    display : block;
+    position : relative;
+    margin-left : auto;
+    margin-right : auto; 
 }
 
 #contact-info li {
@@ -876,7 +902,7 @@ li#amazonUK {
 #contact-info h2 {
     padding-left: 50px;
     padding-top: 22px;
-    color: white;
+    color: #ffffe4;
     font-family: Dosis;
     font-size: 1.25rem;
 }
@@ -894,13 +920,13 @@ li#amazonUK {
 
 #contact-social-media li {
     font-size: 1.5rem;
-    color: white;
+    color: #ffffe4;
     list-style-type: none
 }
 
 #contact-social-media i {
     font-size: 1.5rem;
-    color: white;
+    color: #ffffe4;
 }
 
 #contact-social-media h2 {
@@ -918,7 +944,7 @@ li#amazonUK {
 
 #contact-info li {
     font-size: 1.5rem;
-    color: white;  
+    color: #ffffe4;  
 }
 
 #contact-info h2 {
@@ -942,8 +968,7 @@ li#amazonUK {
     font-size: 1.25rem;
 }
 
-.contact-input-text {
-    height: 20px;
+.contact-input-text { 
     width: 220px;
     border: 0px;
     font-size: 1.1rem;
@@ -992,7 +1017,7 @@ li#amazonUK {
     margin-left: 35px;
     height: 20px;
     width: 200px;
-    border: white 1px; 
+    border: #ffffe4 1px; 
 }
 
 #contact-input-text {
@@ -1015,20 +1040,20 @@ li#amazonUK {
     float: left;
     min-height: 550px;
     width: 0px;
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
 }
 
 #vruler2 {
     float: left;
     min-height: 550px;
     width: 0px;
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
 
 }
 
 #contact-button {
     float: left;
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
     height: 30px;
     width: 100px;
     display: inline-block;
@@ -1054,7 +1079,7 @@ li#amazonUK {
 }
 
 #submit-button {
-    border: 1px solid white;
+    border: 1px solid #ffffe4;
     height: 30px;
     width: 100px;
     display: inline-block;
@@ -1073,20 +1098,21 @@ li#amazonUK {
 
 /***** FOOTER *****/
 #hruler {
-    border: solid white 1px;
+    border: solid #ffffe4 1px;
     width: 100%;
 }
 
 #footer {
     position: relative;
     display: block;
-    background-color: #170503;
+    background-color: black;
     width: 100%;
     height: 165px;
     margin: 0 auto;
     clear: both;
     padding-bottom: 20px;
     margin-bottom: -5px;
+    padding-top: 20px;
 }
 
 #footer li {
@@ -1098,7 +1124,7 @@ li#amazonUK {
 }
 
 #footer li a {
-    color: white;
+    color: #ffffe4;
     font-family: Dosis;
     font-size: .9rem;
 }
@@ -1107,7 +1133,7 @@ li#amazonUK {
     margin: 0 auto;
     max-width: 900px;
     height: 100%;
-    background-color: #170503;
+    background-color: black;
 }
 
 .footer-container img {
@@ -1118,7 +1144,7 @@ li#amazonUK {
 }
 
 .footer-container i {
-    color: white;
+    color: #ffffe4;
     font-size: 2rem;
     margin-top: 25px;
     line-height: 108px;
@@ -1127,7 +1153,7 @@ li#amazonUK {
 
 .float-left {
     float: left;
-    background-color: #170503;
+    background-color: black;
 }
 
 .float-left div {
@@ -1161,15 +1187,9 @@ li#amazonUK {
 #notes p {
     font-family: helvetica;
     font-size: .75rem;
-    font-color: white;
+    font-color: #ffffe4;
 }
-
-#developer-container {
-    width : 100%;
-    background-color: black;
-    height : 30px;
-    text-align : center;
-}
+ 
 
 #developer-container a {
     font-size: 1.15rem;

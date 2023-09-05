@@ -5,20 +5,26 @@ var Router = Backbone.Router.extend({
         "team": 'Team',
         "report": 'Landscaping-Report',
         "add": 'Add',
-        "upload" : 'Upload' 
+        "about" : 'About' 
     }
 });                     
 
 var router = new Router();
 
 //HOME
-router.on('route:Home', function() {
-    
+router.on('route:Home', function(){ 
     $('.index-container').css({"margin-top": "50px"});
     var indexView = new IndexView({model: indexModel});
     var iv = indexView.render().el;
     $('#app').html(iv);
 }); 
+
+router.on('route:About', function(){
+    $('.about-container').css({"margin-top": "50px"});
+    var aboutView = new AboutView();
+    var av = aboutView.render().el;
+    $('#app').html(av);
+});
  
 router.on('route:Landscaping-Report', function() {
      
@@ -39,23 +45,19 @@ router.on('route:Team', function() {
     $('#app').html(tv); 
 });
 
-router.on('route:Add', function() { 
+router.on('route:Add', function() {  
     
-    //make ajax call to access diary.json 
-    var getJSON = $.get("/json");
-    getJSON.then(function(data) {
-        $.each(data, function(index, obj) {
-            //diaryJSON.push(obj);
-            console.log(data)
-        });
-    });  
-    var contactView = new ContactView();
-    var cv = contactView.render().el;
-    $('#app').html(cv); 
+    setTimeout(()=>{ 
+        $('#overlaycontainer2').css('visibility', 'visible');
+        $('#overlaycontainer2').css('width', '50%') 
+        var contactView = new ContactView();
+        var cv = contactView.render().el;
+        $('#overlay-form').html(cv); 
+    },800) 
+
 });
 
-router.on('route:Upload', function() {
-   
+router.on('route:Upload', function() { 
     //render map on screen
     let uploadView = new UploadView();
     let uv = uploadView.render().el;
