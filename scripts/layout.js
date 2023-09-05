@@ -243,8 +243,7 @@ $(document).ready(function(e) {
         setTimeout(()=>{
 
           if (window.sessionStorage.getItem("pageClicked") == null){
-              window.sessionStorage.setItem("pageClicked", true)
-              alert("Scroll down and enter details in the fields below.")
+              window.sessionStorage.setItem("pageClicked", true) 
           } 
             
         },1000)
