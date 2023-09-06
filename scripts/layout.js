@@ -255,7 +255,7 @@ $(document).ready(function(e) {
         //append task-point marker
         taskPoint.push((percentWidth)*winWidth)
         taskPoint.push((((percentHeight*100))/100)*winHeight)
-        $('#header-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + (taskPoint[0]-3) + 'px; top:' + (taskPoint[1]-3) + 'px;"></div>')
+        $('#header-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + (taskPoint[0]-8) + 'px; top:' + (taskPoint[1]-8) + 'px;"></div>')
     
         //reset variables and lock screen until form submit complete
         setTimeout(()=>{
