@@ -165,8 +165,8 @@ $(document).ready(function(e) {
         '<div class="overlayBG">' + 
             '<h1>' + projectArr[e.target.id-1].title + '</h1>' +
         '</div>' +
-        '<h2>Closest Building : ' + projectArr[e.target.id-1].building + '<h2>' +
-        '<h2>Type : ' + projectArr[e.target.id-1].type + '<h2>' +
+        '<h2>Closest Building : ' + projectArr[e.target.id-1].building + '</h2>' +
+        '<h2>Type : ' + projectArr[e.target.id-1].type + '</h2>' +
         '<h2>' + projectArr[e.target.id-1].summary + '</h2>' +
         '<div id="more">' +  
               '<h3 id="moreLink">Close</h3>' +  
