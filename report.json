@@ -1,1 +1,12 @@
-[{"id":1,"title":"Failing Clubhouse","building":"Clubhouse","type":"Repair","summary":"This needs to burn down","imgUrl":"images/1693691676061.jpg","xPt":"0.7041226986088666","yPt":"0.7114189877569387"},{"id":2,"title":"Add Grass ","building":"3000","type":"Not Specified","summary":"Bare areas need additional grass to cover exposed areas.","imgUrl":"images/1693715027905.jpg","xPt":"0.32842185660185214","yPt":"0.7494426915017017"},{"id":3,"title":"Mulch, Grass, Shrubs","building":"3000","type":"Not Specified","summary":"Island needs mulch to cover large areas. Add orgnamental grasses throughout.","imgUrl":"images/1693715909779.jpg","xPt":"0.34051490946122265","yPt":"0.6301046833007938"},{"id":4,"title":"Safety Issue with large Trees","building":"8000","type":"Repair","summary":"Large pine tree needs to be removed. Safety issue.","imgUrl":"images/1693716219351.jpg","xPt":"0.3373325271298094","yPt":"0.14638795672644705"},{"id":5,"title":"TREE REMOVAL","building":"1200","type":"Not Specified","summary":"There is a large tree that needs to have branches removed.","imgUrl":"images/1693764100890.jpg","xPt":"0.37679406803933424","yPt":"0.6253311629727575"},{"title":"Removal of Pine Tree","id":6,"building":"2000","type":"Removal","summary":"Remove large Pine tree","imgUrl":"images/1693775413198.jpg","xPt":"0.18903351048594977","yPt":"0.8894659544574337"},{"id":"7","title":"Removal of bushes","building":"3000","type":"Removal","summary":"Bushes that are straggly need to be removed. They harbor bugs.","imgUrl":"images/1693775639961.jpg","xPt":"0.2915062215574579","yPt":"0.8258190167502828"},{"id":"8","title":"Sinking concrete stairs","building":"1300","type":"Repair","summary":"The concrete steps in front of building 1300 are lopsided.","imgUrl":"images/1693776867569.jpg","xPt":"0.5613722432613054","yPt":"0.5219048891986373"},{"id":"9","title":"Plant Grass","building":"1200","type":"Design","summary":"Bare spots in grass island need more fertilizer or something.","imgUrl":"images/1693777671109.jpg","xPt":"0.44489704993157875","yPt":"0.5250872360839949"},{"id":"10","title":"Testng 123","building":"1000","type":"Design","summary":"Hope this works","imgUrl":"images/1693886277655.png","xPt":"0.38952359736498743","yPt":"0.3182346885357545"}]
+[
+    {
+        "id": 1,
+        "title": "Testing 123",
+        "building": "Clubhouse",
+        "type": "Repair",
+        "summary": "This is only a test",
+        "imgUrl": "images/1693691676061.jpg",
+        "xPt": "0.7041226986088666",
+        "yPt": "0.7114189877569387"
+    } 
+]

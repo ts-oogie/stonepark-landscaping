@@ -63,7 +63,7 @@ $(document).ready(function(e) {
  
   setTimeout(()=>{
 
-    let url = 'https://stoneparklandscaping-de6e42b530c0.herokuapp.com/#/'
+    let url = 'https://stoneparklandscaping-de6e42b530c0.herokuapp.com/'
     let homeUrl = url
     let newUrl 
 
@@ -100,7 +100,7 @@ $(document).ready(function(e) {
       $('#overlaycontainer2').css('visibility', 'hidden' );
 
       setTimeout(()=>{ 
-        window.location.replace(url); 
+        window.location.replace(url + '#/'); 
       }, 100) 
 
     } 
@@ -143,7 +143,7 @@ $(document).ready(function(e) {
       $('#overlaycontainer').css('visibility', 'hidden' ); 
       $('#overlaycontainer').scrollTop(0)
       screenLocked = false
-      window.location.replace(url);  
+      window.location.replace(url + '#/');  
   });
 
   $("#home").on('click', (e)=>{
@@ -189,7 +189,7 @@ $(document).ready(function(e) {
       $('#overlaycontainer').css('visibility', 'hidden' );
       document.getElementById(thisStr).remove()
       screenLocked = false
-      window.location.replace(url);  
+      window.location.replace(url + '#/');  
   }) 
 
   $('#team').on('click', (e)=>{
@@ -249,7 +249,7 @@ $(document).ready(function(e) {
         },1000)
         
         newUrl = ''
-        newUrl = url + 'add' 
+        newUrl = url + '#/add' 
         window.location.replace(newUrl);  
     
         percentWidth = e.pageX/winWidth
