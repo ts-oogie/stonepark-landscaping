@@ -34,7 +34,7 @@ var ContactView = Backbone.View.extend({
     template: _.template(
         '<div id="contact-view">' +  
             '<div id="contact-info">' + 
-                '<form method="POST" id="contact-f" enctype="multipart/form-data" action="https://stonepark-landscaping.onrender.com/upload">' +
+                '<form method="POST" id="contact-f" enctype="multipart/form-data" action="https://stonepark-beautification-committee.onrender.com/upload">' +
                 '<p>' + 
                     '<label for="title" class="contact-input-label">Caption :</label><br/>' +  
                     '<input class="contact-input-text" name="title" type="text" maxlength="30" autofocus required />' + 

@@ -63,7 +63,7 @@ $(document).ready(function(e) {
  
   setTimeout(()=>{
 
-    let url = 'https://stonepark-landscaping.onrender.com/'
+    let url = 'https://stonepark-beautification-committee.onrender.com/'
     let homeUrl = url
     let newUrl 
 
