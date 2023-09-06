@@ -259,8 +259,8 @@ $(document).ready(function(e) {
     
         //reset variables and lock screen until form submit complete
         setTimeout(()=>{
-            $('#contact-f').append('<input id="inputX" value="' + percentWidth + '" class="contact-input-text-invisible" name="xPt" type="text" maxlength="30"  />')
-            $('#contact-f').append('<input id="inputY" value="' + percentHeight + '" class="contact-input-text-invisible" name="yPt" type="text" maxlength="30"  />')
+            $('#contact-f').append('<input id="inputX" value="' + percentWidth-8 + '" class="contact-input-text-invisible" name="xPt" type="text" maxlength="30"  />')
+            $('#contact-f').append('<input id="inputY" value="' + percentHeight-8 + '" class="contact-input-text-invisible" name="yPt" type="text" maxlength="30"  />')
             $('#contact-f').append('<input id="inputI" value="' + (id+1) + '" class="contact-input-text-invisible" name="index" type="text" maxlength="30"  />')
         }, 1000)  
 
