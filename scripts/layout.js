@@ -257,12 +257,12 @@ $(document).ready(function(e) {
         //append task-point marker
         taskPoint.push((percentWidth)*winWidth)
         taskPoint.push((((percentHeight*100))/100)*winHeight)
-        $('#header-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + (taskPoint[0]-calibration) + 'px; top:' + (taskPoint[0]-calibration) + 'px;"></div>')
+        $('#header-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + (taskPoint[0]-calibration) + 'px; top:' + (taskPoint[1]-calibration) + 'px;"></div>')
     
         //reset variables and lock screen until form submit complete
         setTimeout(()=>{
             $('#contact-f').append('<input id="inputX" value="' + (taskPoint[0]-calibration) + '" class="contact-input-text-invisible" name="xPt" type="text" maxlength="30"  />')
-            $('#contact-f').append('<input id="inputY" value="' + (taskPoint[0]-calibration) + '" class="contact-input-text-invisible" name="yPt" type="text" maxlength="30"  />')
+            $('#contact-f').append('<input id="inputY" value="' + (taskPoint[1]-calibration) + '" class="contact-input-text-invisible" name="yPt" type="text" maxlength="30"  />')
             $('#contact-f').append('<input id="inputI" value="' + (id+1) + '" class="contact-input-text-invisible" name="index" type="text" maxlength="30"  />')
         }, 1000)  
 
