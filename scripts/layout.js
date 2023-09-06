@@ -114,7 +114,7 @@ $(document).ready(function(e) {
         $.each(result, (index, data)=>{  
           console.log(data.type)
           let thisClass
-          if(data.type == "Repair"){
+          if(data.type == "Repair" || data.type == "Not Specified"){
             thisClass = 'task-repair'
           }
           else if(data.type == "Removal"){
@@ -122,10 +122,7 @@ $(document).ready(function(e) {
           }
           else if(data.type == "Design"){
             thisClass = 'task-design'
-          }
-          else if(data.type == "Not Specified"){
-            thisClass = 'task-other'
-          }
+          } 
 
           id++
           projectArr.push(data)  
