@@ -83,6 +83,8 @@ $(document).ready(function(e) {
     let percentHeight
     let screenLocked = false
 
+    let calibration = 8
+
     if (window.performance) {
         console.info("window.performance works fine on this browser");
     }
@@ -127,7 +129,7 @@ $(document).ready(function(e) {
           id++
           projectArr.push(data)  
 
-          $('#header-container').append('<a class="task-point-a"><div id="' + data.id + '" class="'+ thisClass + '" style="left:' + data.xPt*winWidth+ 'px; top:' + data.yPt*winHeight + 'px;"></div></a>')
+          $('#header-container').append('<a class="task-point-a"><div id="' + data.id + '" class="'+ thisClass + '" style="left:' + data.xPt + 'px; top:' + data.yPt + 'px;"></div></a>')
      
         })  
     })  
@@ -255,12 +257,12 @@ $(document).ready(function(e) {
         //append task-point marker
         taskPoint.push((percentWidth)*winWidth)
         taskPoint.push((((percentHeight*100))/100)*winHeight)
-        $('#header-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + (taskPoint[0]-8) + 'px; top:' + (taskPoint[1]-8) + 'px;"></div>')
+        $('#header-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + (taskPoint[0]-calibration) + 'px; top:' + (taskPoint[0]-calibration) + 'px;"></div>')
     
         //reset variables and lock screen until form submit complete
         setTimeout(()=>{
-            $('#contact-f').append('<input id="inputX" value="' + (percentWidth-8) + '" class="contact-input-text-invisible" name="xPt" type="text" maxlength="30"  />')
-            $('#contact-f').append('<input id="inputY" value="' + (percentHeight-8) + '" class="contact-input-text-invisible" name="yPt" type="text" maxlength="30"  />')
+            $('#contact-f').append('<input id="inputX" value="' + (taskPoint[0]-calibration) + '" class="contact-input-text-invisible" name="xPt" type="text" maxlength="30"  />')
+            $('#contact-f').append('<input id="inputY" value="' + (taskPoint[0]-calibration) + '" class="contact-input-text-invisible" name="yPt" type="text" maxlength="30"  />')
             $('#contact-f').append('<input id="inputI" value="' + (id+1) + '" class="contact-input-text-invisible" name="index" type="text" maxlength="30"  />')
         }, 1000)  
 
