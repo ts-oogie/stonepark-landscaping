@@ -8,5 +8,105 @@
         "imgUrl": "images/1693691676061.jpg",
         "xPt": "0.7041226986088666",
         "yPt": "0.7114189877569387"
-    } 
+    },
+    {
+        "id": "2",
+        "title": "Sinking concrete steps",
+        "building": "1300",
+        "type": "Repair",
+        "summary": "There may be a code that states a means of egress can not be sloped this much unless its a ramp.",
+        "imgUrl": "images/1693971091934.jpeg",
+        "xPt": "0.5600568585643213",
+        "yPt": "0.511727078891258"
+    },
+    {
+        "id": "3",
+        "title": "Sinkhole",
+        "building": "1300",
+        "type": "Repair",
+        "summary": "There is a sinkhole that someone can step into and break their leg or more.",
+        "imgUrl": "images/1693971133408.jpeg",
+        "xPt": "0.572139303482587",
+        "yPt": "0.5223880597014926"
+    },
+    {
+        "id": "4",
+        "title": "Removal of Pine Tree",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "This tree is too close to building",
+        "imgUrl": "images/1693971180439.jpeg",
+        "xPt": "0.3411513859275053",
+        "yPt": "0.1883439943141436"
+    },
+    {
+        "id": "5",
+        "title": "Remove Pine Tree",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "Tree could fall and damage building.",
+        "imgUrl": "images/1693971221654.jpeg",
+        "xPt": "0.3091684434968017",
+        "yPt": "0.14036958066808813"
+    },
+    {
+        "id": "6",
+        "title": "Remove Pine Trees",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Removed highlighted trees on far corner.",
+        "imgUrl": "images/1693971256466.jpeg",
+        "xPt": "0.16631130063965885",
+        "yPt": "0.2221037668798863"
+    },
+    {
+        "id": "7",
+        "title": "Removal of Pine Tree",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Corner tree may fall and damage building.",
+        "imgUrl": "images/1693971289331.jpeg",
+        "xPt": "0.21748400852878466",
+        "yPt": "0.28429282160625446"
+    },
+    {
+        "id": "8",
+        "title": "Remove Pine Trees",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Large pine tree in rear corner should be removed.",
+        "imgUrl": "images/1693971323702.jpeg",
+        "xPt": "0.20113717128642503",
+        "yPt": "0.36780383795309174"
+    },
+    {
+        "id": "9",
+        "title": "Full sun grass on island",
+        "building": "3000",
+        "type": "Design",
+        "summary": "As indicated on sketch, plant full sun grass on corner in front of existing bushes.",
+        "imgUrl": "images/1693971411019.jpeg",
+        "xPt": "0.30419331911869224",
+        "yPt": "0.6272210376687989"
+    },
+    {
+        "id": "10",
+        "title": "Remove Large Tree",
+        "building": "1200",
+        "type": "Removal",
+        "summary": "Remove large tree in front of building 1200.",
+        "imgUrl": "images/1693971472944.jpeg",
+        "xPt": "0.42999289267945984",
+        "yPt": "0.570362473347548"
+    },
+    {
+        "id": "11",
+        "title": "Remove Nandina Bushes",
+        "building": "1200",
+        "type": "Removal",
+        "summary": "Remove bushes in front of guardrail. They are invasive and also toxic to dogs and cats.",
+        "imgUrl": "images/1693971520956.jpeg",
+        "xPt": "0.4235963041933191",
+        "yPt": "0.6165600568585644"
+    }
 ]
