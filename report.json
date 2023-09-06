@@ -8,5 +8,115 @@
         "imgUrl": "images/1693691676061.jpg",
         "xPt": "0.7041226986088666",
         "yPt": "0.7114189877569387"
-    } 
+    },
+    {
+        "id": "2",
+        "title": "Remove pine tree",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "Remove pine tree close to structure.",
+        "imgUrl": "images/1694031967212.jpeg",
+        "xPt": "463",
+        "yPt": "100.00000000000001"
+    },
+    {
+        "id": "3",
+        "title": "Remove pine tree",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "Remove pine tree on side of building.",
+        "imgUrl": "images/1694031996700.jpeg",
+        "xPt": "417",
+        "yPt": "75"
+    },
+    {
+        "id": "4",
+        "title": "Add Grass to corner",
+        "building": "3000",
+        "type": "Design",
+        "summary": "See sketch.",
+        "imgUrl": "images/1694032026447.jpeg",
+        "xPt": "399",
+        "yPt": "339"
+    },
+    {
+        "id": "5",
+        "title": "Remove three trees",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Remove three trees in front of 5000",
+        "imgUrl": "images/1694032338094.jpeg",
+        "xPt": "213",
+        "yPt": "114"
+    },
+    {
+        "id": "6",
+        "title": "Remove pine tree",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Remove tree on front corner",
+        "imgUrl": "images/1694032372232.jpeg",
+        "xPt": "292",
+        "yPt": "154"
+    },
+    {
+        "id": "7",
+        "title": "Remove pine tree",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Located on rear corner",
+        "imgUrl": "images/1694032405855.jpeg",
+        "xPt": "273",
+        "yPt": "196"
+    },
+    {
+        "id": "8",
+        "title": "Sloped stairs",
+        "building": "1300",
+        "type": "Repair",
+        "summary": "Check code  means of egress slope requirements. This seems steep for not being a ramp.",
+        "imgUrl": "images/1694032477107.jpeg",
+        "xPt": "758",
+        "yPt": "271"
+    },
+    {
+        "id": "9",
+        "title": "Hidden hole in ground",
+        "building": "1300",
+        "type": "Repair",
+        "summary": "Hole is hard to see. Someone could step into it and injure themselves.",
+        "imgUrl": "images/1694032517612.jpeg",
+        "xPt": "780.9999999999999",
+        "yPt": "282"
+    },
+    {
+        "id": "10",
+        "title": "Remove Pine Tree",
+        "building": "2000",
+        "type": "Removal",
+        "summary": "Remove Pine tree as shown.",
+        "imgUrl": "images/1694032724221.jpeg",
+        "xPt": "241",
+        "yPt": "477.99999999999994"
+    },
+    {
+        "id": "11",
+        "title": "Remove 10 Trees",
+        "building": "2000",
+        "type": "Removal",
+        "summary": "Remove ten trees marked with orange spray paint.",
+        "imgUrl": "images/1694032827013.jpeg",
+        "xPt": "279",
+        "yPt": "518"
+    },
+    {
+        "id": "12",
+        "title": "Remove sloping tree",
+        "building": "1000",
+        "type": "Removal",
+        "summary": "Seems like it doesn't have a solid foundation",
+        "imgUrl": "images/1694032967089.jpeg",
+        "xPt": "86",
+        "yPt": "525"
+    }
 ]
