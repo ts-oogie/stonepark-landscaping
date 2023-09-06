@@ -46,6 +46,7 @@ app.get('/json', (req, res)=>{
 })
 
 app.post('/upload', upload.any(), (req, res)=>{
+    
     let formData = req.body
     let imgPath = req.files[0].path 
 

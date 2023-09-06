@@ -63,7 +63,7 @@ $(document).ready(function(e) {
  
   setTimeout(()=>{
 
-    let url = 'https://stoneparklandscaping-de6e42b530c0.herokuapp.com/'
+    let url = 'https://stonepark-landscaping.onrender.com/'
     let homeUrl = url
     let newUrl 
 
