@@ -110,7 +110,7 @@ $(document).ready(function(e) {
     let winHeight = $('#img-header').height() 
 
     if (window.innerWidth > winWidth){
-      calibrationX = window.innerWidth - winWidth
+      calibrationX = (window.innerWidth - winWidth)/2
     } 
 
     if (window.sessionStorage.getItem("pageLoaded") == null){
