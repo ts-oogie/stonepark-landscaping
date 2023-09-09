@@ -108,9 +108,7 @@ $(document).ready(function(e) {
     let winWidth = $('#img-header').width()
     let winHeight = $('#img-header').height() 
 
-    if (window.innerWidth > winWidth){
-      calibrationX = ((window.innerWidth - winWidth)/4)
-    } 
+    
 
     if (window.sessionStorage.getItem("pageLoaded") == null){
           window.sessionStorage.setItem("pageLoaded", true)
