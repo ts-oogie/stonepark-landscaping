@@ -101,7 +101,6 @@ $(document).ready(function(e) {
     
  
   setTimeout(()=>{
-
     
     let calibrationX = 8
     let calibrationY = 8
