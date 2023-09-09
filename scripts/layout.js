@@ -94,7 +94,8 @@ $(document).ready(function(e) {
         console.log(result) 
       })  
     }, 3600000)
-  
+
+    window.resizeTo(1400, 712) 
     
     //Sept 7, 2023 : post
     
@@ -279,6 +280,8 @@ $(document).ready(function(e) {
         newUrl = ''
         newUrl = url + '#/add' 
         window.location.replace(newUrl);  
+
+        winWidth
     
         percentWidth = e.pageX/winWidth
         percentHeight = e.pageY/winHeight
