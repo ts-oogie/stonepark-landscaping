@@ -8,5 +8,145 @@
         "imgUrl": "images/1693691676061.jpg",
         "xPt": "0",
         "yPt": "2"
-    } 
+    },
+    {
+        "id": "2",
+        "title": "New Shrubs, Grass, Mulch",
+        "building": "1000",
+        "type": "Design",
+        "summary": "See Illustration",
+        "imgUrl": "images/1694267124230.jpg",
+        "xPt": "0.0693293142426526",
+        "yPt": "0.9815373021853806"
+    },
+    {
+        "id": "3",
+        "title": "Entrance island addition",
+        "building": "Entrance",
+        "type": "Design",
+        "summary": "See drawing",
+        "imgUrl": "images/1694267190628.jpg",
+        "xPt": "0.19782330345710628",
+        "yPt": "0.5985915492957747"
+    },
+    {
+        "id": "4",
+        "title": "Suspicious Mound",
+        "building": "Entrance",
+        "type": "Removal",
+        "summary": "Inspect earthen mound. Could be a dead body. Call professionals for corpse removal",
+        "imgUrl": "images/1694267309024.jpeg",
+        "xPt": "0.21127765881513205",
+        "yPt": "0.5924339757316203"
+    },
+    {
+        "id": "5",
+        "title": "Remove Pine Tree",
+        "building": "2000",
+        "type": "Removal",
+        "summary": "Too close to building and they shed too many pine cones",
+        "imgUrl": "images/1694267451991.jpeg",
+        "xPt": "0.17987152034261242",
+        "yPt": "0.8922198429693077"
+    },
+    {
+        "id": "6",
+        "title": "Remove Pine Trees",
+        "building": "2000",
+        "type": "Removal",
+        "summary": "Remove marked trees in behind parking area",
+        "imgUrl": "images/1694267511040.jpeg",
+        "xPt": "0.20842255531763026",
+        "yPt": "0.9618129907209136"
+    },
+    {
+        "id": "7",
+        "title": "Remove Pine Trees",
+        "building": "3000",
+        "type": "Removal",
+        "summary": "remove trees that are marked",
+        "imgUrl": "images/1694267574356.jpeg",
+        "xPt": "0.2955032119914347",
+        "yPt": "0.9243397573162028"
+    },
+    {
+        "id": "8",
+        "title": "Remove Pine Trees",
+        "building": "3000",
+        "type": "Removal",
+        "summary": "This will allow more sunlight in",
+        "imgUrl": "images/1694267614068.jpeg",
+        "xPt": "0.3761598857958601",
+        "yPt": "0.8476088508208423"
+    },
+    {
+        "id": "9",
+        "title": "Sinking concrete steps",
+        "building": "1300",
+        "type": "Repair",
+        "summary": "Check code for means of egress and slope. Steps seem steep for not being a ramp",
+        "imgUrl": "images/1694267664621.jpeg",
+        "xPt": "0.5638829407566024",
+        "yPt": "0.5139186295503212"
+    },
+    {
+        "id": "10",
+        "title": "Sinkhole",
+        "building": "1300",
+        "type": "Repair",
+        "summary": "May cause injury if stepped into",
+        "imgUrl": "images/1694267699098.jpeg",
+        "xPt": "0.5795860099928622",
+        "yPt": "0.5317630264097074"
+    },
+    {
+        "id": "11",
+        "title": "Remove Pine Trees",
+        "building": "4000",
+        "type": "Removal",
+        "summary": "Removal of marked trees will allow more sunlight for yard and entrance island across street.",
+        "imgUrl": "images/1694267765022.jpeg",
+        "xPt": "0.16916488222698073",
+        "yPt": "0.4996431120628123"
+    },
+    {
+        "id": "12",
+        "title": "Remove Marked Trees",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Remove please",
+        "imgUrl": "images/1694267827716.jpeg",
+        "xPt": "0.16630977872947894",
+        "yPt": "0.21413276231263384"
+    },
+    {
+        "id": "13",
+        "title": "Removal of Pine Tree",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Too close to building",
+        "imgUrl": "images/1694267871458.jpeg",
+        "xPt": "0.22127052105638828",
+        "yPt": "0.301570306923626"
+    },
+    {
+        "id": "14",
+        "title": "Removal of Pine Tree",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Too close to building",
+        "imgUrl": "images/1694267902018.jpeg",
+        "xPt": "0.20842255531763026",
+        "yPt": "0.3836545324768023"
+    },
+    {
+        "id": "15",
+        "title": "Remove Pine Trees",
+        "building": "1000",
+        "type": "Removal",
+        "summary": "Removed marked trees",
+        "imgUrl": "images/1694268022553.jpeg",
+        "xPt": "0.09421841541755889",
+        "yPt": "0.6834403997144897"
+    }
 ]

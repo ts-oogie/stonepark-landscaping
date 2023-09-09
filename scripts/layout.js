@@ -207,6 +207,7 @@ $(document).ready(function(e) {
     })
 
     $(document).on('click', 'button#cancel', ()=>{
+      alert
 
       let thisEl = id+1
       let thisStr = thisEl.toString()
