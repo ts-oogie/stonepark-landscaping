@@ -13,7 +13,7 @@ html, body {
 margin-right: -11px;
 margin:0;
 
-padding:0;
+padding:0; 
 
 }
 
@@ -241,6 +241,7 @@ body {
 .main-container {
     position: relative;  
     margin: 0 auto;
+    background-color: #9ac768;
 }
 
 /***** SOCIAL MEDIA & NAVIGATION *****/
@@ -269,10 +270,16 @@ body {
     color: #ffffe4;
 }
 
+ 
+
 #header-container {
     z-index: 30; 
+    margin : auto; 
+    min-width: 1600px;
+    max-width: 1600px;
     display : block; 
     position : relative;
+    background-color: #9ac768;
 }
 
 #header-container img {
@@ -283,6 +290,11 @@ body {
 
 #image-loader {
     display: none;
+}
+
+#img-header {
+    min-width : 1600px;
+    max-width : 1600px;
 }
 
  

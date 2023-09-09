@@ -60,15 +60,49 @@ function clearBoxes(){
 } 
 
 $(document).ready(function(e) { 
- 
-  setTimeout(()=>{
 
     let url = 'https://stonepark-beautification-committee.onrender.com/'
     let homeUrl = url
     let newUrl 
 
-    let id = 0
+    let id = 0 
+    let historyId = 0
+    let historyArr = []
     let projectArr = []  
+
+    let taskPoint = []
+    let percentWidth
+    let percentHeight
+    let screenLocked = false  
+
+    const today = new Date();
+    let yyyy = today.getFullYear();
+    let mm = today.getMonth() + 1; // Months start at 0!
+    let dd = today.getDate();
+
+    if (dd < 10) dd = '0' + dd;
+    if (mm < 10) mm = '0' + mm;
+
+    let formattedToday = dd + '/' + mm + '/' + yyyy; 
+    let time = today.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true})
+
+
+    setInterval(()=>{
+      $.getJSON(url + "json", (result)=>{   
+        console.log("++++++++++++++++++++")
+        console.log(formattedToday + " Time: " + time )
+        console.log(result) 
+      })  
+    }, 3600000)
+  
+    
+    //Sept 7, 2023 : post
+    
+ 
+  setTimeout(()=>{
+
+    
+    let calibration = 8
 
     let winWidth = $('#img-header').width()
     let winHeight = $('#img-header').height() 
@@ -76,14 +110,7 @@ $(document).ready(function(e) {
     if (window.sessionStorage.getItem("pageLoaded") == null){
           window.sessionStorage.setItem("pageLoaded", true)
           alert("Please click on the map to create new project location")
-    } 
-
-    let taskPoint = []
-    let percentWidth
-    let percentHeight
-    let screenLocked = false
-
-    let calibration = 8
+    }  
 
     if (window.performance) {
         console.info("window.performance works fine on this browser");
@@ -110,7 +137,7 @@ $(document).ready(function(e) {
       console.info( "This page is not reloaded");
     } 
  
-  /* Here */
+   
     $.getJSON("/json", (result)=>{ 
       
         $.each(result, (index, data)=>{  
@@ -134,18 +161,18 @@ $(document).ready(function(e) {
         })  
     })  
 
-  //On Clicks ======>   
+     
 
-  $('#overlaycontainer').on('click',  function(e){  
+    $('#overlaycontainer').on('click',  function(e){  
       $('#overlaycontainer').css('width', '85%')
       $('#overlay-app').empty()
       $('#overlaycontainer').css('visibility', 'hidden' ); 
       $('#overlaycontainer').scrollTop(0)
       screenLocked = false
       window.location.replace(url + '#/');  
-  });
+    });
 
-  $("#home").on('click', (e)=>{
+    $("#home").on('click', (e)=>{
 
     clearBoxes();
 
@@ -153,10 +180,11 @@ $(document).ready(function(e) {
     window.location.reload();
     newUrl = ''
 
-  })
-  //***************************Sept 3, 2023 */
-  //On click, selects id of target element selected
-  $(document).on('click', 'a.task-point-a', (e)=>{ 
+    })
+
+    //***************************Sept 3, 2023 */
+    //On click, selects id of target element selected
+    $(document).on('click', 'a.task-point-a', (e)=>{ 
  
     $('#overlaycontainer').css('visibility', 'visible' );
       
@@ -172,9 +200,10 @@ $(document).ready(function(e) {
         '</div>'  +
         '<img class="overlayImg" src="' + projectArr[e.target.id-1].imgUrl + '" />' 
     );
-  })
 
-  $(document).on('click', 'button#cancel', ()=>{
+    })
+
+    $(document).on('click', 'button#cancel', ()=>{
 
       let thisEl = id+1
       let thisStr = thisEl.toString()
@@ -189,9 +218,9 @@ $(document).ready(function(e) {
       document.getElementById(thisStr).remove()
       screenLocked = false
       window.location.replace(url + '#/');  
-  }) 
+    }) 
 
-  $('#team').on('click', (e)=>{
+    $('#team').on('click', (e)=>{
 
       $('#overlaycontainer').css('visibility', 'visible');
       $('#overlaycontainer').css('width', '50%')
@@ -210,34 +239,34 @@ $(document).ready(function(e) {
                           '<p>Volunteer : Mary</p>' + 
                           '<p>Volunteer : Lynn</p>' +
                           '<p>Volunteer : Gregory</p>' + 
-                          '<p>Volunteer : Melissa</p>' + 
-               
+                          '<p>Volunteer : Melissa</p>' +  
                 '</div>'  
-         );
+      );
 
-  })
+    })
 
   
 
-  $(document).on('click', 'input.contact-radio-text', (e)=>{
-    
-    if(e.target.name == 'repair'){
-      $("#design").prop('checked', false)
-      $("#removal").prop('checked', false)
-    }
-    else if (e.target.name == 'design'){
-      $('#repair').prop('checked', false)
-      $('#removal').prop('checked', false) 
-    }
-    else if(e.target.name == 'removal'){
-      $('#repair').prop('checked', false)
-      $('#design').prop('checked', false) 
-    }
-  })
+    $(document).on('click', 'input.contact-radio-text', (e)=>{
+      
+      if(e.target.name == 'repair'){
+        $("#design").prop('checked', false)
+        $("#removal").prop('checked', false)
+      }
+      else if (e.target.name == 'design'){
+        $('#repair').prop('checked', false)
+        $('#removal').prop('checked', false) 
+      }
+      else if(e.target.name == 'removal'){
+        $('#repair').prop('checked', false)
+        $('#design').prop('checked', false) 
+      }
 
-  $('#img-header').on('click', (e)=>{    
+    })
 
-    if (screenLocked == false){ 
+    $('#img-header').on('click', (e)=>{    
+
+      if (screenLocked == false){ 
 
         setTimeout(()=>{
 
@@ -271,10 +300,12 @@ $(document).ready(function(e) {
             percentWidth = ""
             percentHeight = ""
             screenLocked = true  
-        }, 1500)   
+        }, 1500)    
 
-    } 
-  })
+      } 
+
+    })
+
   }, 1000)
   
 });
