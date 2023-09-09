@@ -108,29 +108,8 @@ i {
 
 
 
-
-
-#sidePanel {
-    display: none;
-    width: 50%;
-    height: 100%;
-    float: left;
-    background-color: #31837c;
-    position: fixed;
-    z-index: 500; 
-}
-
-#sidePanelUi {
-    margin-top : 100px;
-}
-
-#sidePanelUi li{
-    list-style-type: none;
-}
-
-#closer {
-    padding-left : 16px;
-}
+ 
+ 
 
 h1 {
     padding-left: 10px;
@@ -345,7 +324,7 @@ body {
   height: 85%;
   width: 80%;
   left: 50%; 
-  z-index: 100;
+  z-index: 110;
   margin: 0 0 0 -40%;
   margin-top: 5%; 
   overflow: scroll;  
@@ -357,12 +336,11 @@ body {
 #overlaycontainer2 {
     visibility: hidden;
     display: block;
-    position: absolute;
-    z-index: 100;
+    position: absolute; 
     height: 90%;
     width: 80%;
     left: 50%; 
-    z-index: 100;
+    z-index: 110;
     margin: 0 0 0 -40%;
     margin-top: 3%; 
     overflow: scroll;  
@@ -1045,22 +1023,7 @@ li#amazonUK {
     position: relative;
     display: inline-block;
 }
-
-#vruler1 {
-    float: left;
-    min-height: 550px;
-    width: 0px;
-    border: 1px solid #ffffe4;
-}
-
-#vruler2 {
-    float: left;
-    min-height: 550px;
-    width: 0px;
-    border: 1px solid #ffffe4;
-
-}
-
+ 
 #contact-button {
     float: left;
     border: 1px solid #ffffe4;
@@ -1148,20 +1111,8 @@ li#amazonUK {
     background-color: black;
 }
 
-.footer-container img {
-    margin-top: 25px;
-    float: left;
-    margin-left: 15px;
-    margin-right: 10px;
-}
-
-.footer-container i {
-    color: #ffffe4;
-    font-size: 2rem;
-    margin-top: 25px;
-    line-height: 108px;
-    float: left; 
-}
+ 
+ 
 
 .float-left {
     float: left;
@@ -1183,32 +1134,7 @@ li#amazonUK {
     float: right;
     margin-top: 1px;
 }
-
-#notes { 
-    clear: both;
-    float: left;
-    max-width: 900px;
-    margin: 0 auto;
-    height: 25px;
-}
-
-#notes div {
-    height: 25px; 
-}
-
-#notes p {
-    font-family: helvetica;
-    font-size: .75rem;
-    font-color: #ffffe4;
-}
- 
-
-#developer-container a {
-    font-size: 1.15rem;
-    font-family : Dosis;
-}
-
-
+   
 /***** RESPONSIVE *****/
 @media screen and (min-width: 768px) {
     .container {
