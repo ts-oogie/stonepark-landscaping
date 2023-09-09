@@ -75,6 +75,9 @@ $(document).ready(function(e) {
     let percentHeight
     let screenLocked = false  
 
+     
+     
+
     const today = new Date();
     let yyyy = today.getFullYear();
     let mm = today.getMonth() + 1; // Months start at 0!
@@ -93,10 +96,7 @@ $(document).ready(function(e) {
         console.log(formattedToday + " Time: " + time )
         console.log(result) 
       })  
-    }, 3600000)
-
-    window.resizeTo(1400, 712) 
-    
+    }, 3600000) 
     //Sept 7, 2023 : post
     
  
@@ -107,6 +107,10 @@ $(document).ready(function(e) {
 
     let winWidth = $('#img-header').width()
     let winHeight = $('#img-header').height() 
+
+    if (window.innerWidth > winWidth){
+      calibration = window.innerWidth - winWidth
+    } 
 
     if (window.sessionStorage.getItem("pageLoaded") == null){
           window.sessionStorage.setItem("pageLoaded", true)
