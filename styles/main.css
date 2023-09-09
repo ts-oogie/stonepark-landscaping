@@ -293,8 +293,7 @@ body {
 }
 
 #img-header {
-    min-width : 1400px;
-    max-width : 1400px;
+    width: 100%;
 }
 
  
