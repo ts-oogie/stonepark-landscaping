@@ -1118,7 +1118,8 @@ li#amazonUK {
     position: relative;
     display: block;
     background-color: black;
-    width: 100%;
+    width : 100%;
+    min-width: 1400px; 
     height: 165px;
     margin: 0 auto;
     clear: both;
