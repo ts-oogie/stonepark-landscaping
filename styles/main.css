@@ -275,8 +275,8 @@ body {
 #header-container {
     z-index: 30; 
     margin : auto; 
-    min-width: 1500px;
-    max-width: 1500px;
+    min-width: 1400px;
+    max-width: 1400px;
     display : block; 
     position : relative;
     background-color: #9ac768;
@@ -293,8 +293,8 @@ body {
 }
 
 #img-header {
-    min-width : 1500px;
-    max-width : 1500px;
+    min-width : 1400px;
+    max-width : 1400px;
 }
 
  
