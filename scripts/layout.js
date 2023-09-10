@@ -212,7 +212,7 @@ $(document).ready(function(e) {
       let thisEl = id+1
       let thisStr = thisEl.toString()
       
-      $('#overlaycontainer2').css('width', '85%')
+      $('#overlaycontainer2').css('width', '500px')
       $('#overlay-form').empty()
       $('#overlaycontainer2').css('visibility', 'hidden' ); 
       
