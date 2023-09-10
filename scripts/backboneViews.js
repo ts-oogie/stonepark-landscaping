@@ -58,7 +58,7 @@ var ContactView = Backbone.View.extend({
                     '<input class="contact-input-text" name="image" type="file" maxlength="30" required/></p>' + 
                 '</p>' + 
                 '<p>' + 
-                    '<label for="summary" class="contact-input-label">Summary : </label> <br/>' + 
+                    '<label for="summary" class="contact-input-label" maxlength="160">Summary : </label> <br/>' + 
                     '<textarea class="contact-input-field" rows="4" cols="50" name="summary" required></textarea>' + 
                 '</p>' +   
                 '<button id="submit" type="submit" form="contact-f" value="Submit">Submit</button>' + 
