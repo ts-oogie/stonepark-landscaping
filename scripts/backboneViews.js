@@ -44,15 +44,15 @@ var ContactView = Backbone.View.extend({
                     '<input class="contact-input-text" name="building" type="text" maxlength="40" required/>' + 
                 '<p>' +  //Input Button - design
                     '<input type="radio" id="design" class="contact-radio-text" name="design" value="Design"></input>' + 
-                    '<label for="design">Landscape Design</label><br>' + 
+                    '<label for="design">Design</label><br>' + 
                 '<p>' + 
                 '<p>' +  //Input button - removal
                     '<input type="radio" id="removal" class="contact-radio-text" name="removal" value="Removal"></input>' + 
-                    '<label for="removal">Landscape Removal</label><br>' + 
+                    '<label for="removal">Removal</label><br>' + 
                 '<p>' + 
                 '<p>' +  //Input button - removal
                     '<input type="radio" id="repair" class="contact-radio-text" name="repair" value="Repairl"></input>' + 
-                    '<label for="repair">Landscape Repair</label><br>' + 
+                    '<label for="repair">Repair</label><br>' + 
                 '<p>' + 
                     '<label for="image" class="contact-input-label">Upload Image :</label> <br/>' +  
                     '<input class="contact-input-text" name="image" type="file" maxlength="30" required/></p>' + 

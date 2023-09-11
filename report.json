@@ -204,83 +204,13 @@
         "title": "3006 outside debris",
         "building": "3000",
         "type": "Removal",
-        "summary": "Need to remove all the debris they have blown up against my condo. i.e., leaves, debris etc.",
+        "summary": "Need to remove all the debris they have blown up against rear of 3000. i.e., leaves, debris etc.",
         "imgUrl": "images/1694381158984.jpeg",
         "xPt": "0.3462397617274758",
         "yPt": "0.8712033775884793"
-    },
-    {
-        "id": "22",
-        "title": "3006 outside debris",
-        "building": "3000",
-        "type": "Repair",
-        "summary": "Need to repair or remove debris",
-        "imgUrl": "images/1694382372257.jpeg",
-        "xPt": "0.3276247207743857",
-        "yPt": "0.8525879208024006"
-    },
-    {
-        "id": "23",
-        "title": "3006 repair or removal debris",
-        "building": "3000",
-        "type": "Removal",
-        "summary": "Remove or repair.",
-        "imgUrl": "images/1694382601773.jpeg",
-        "xPt": "0.31347728965003724",
-        "yPt": "0.8395571010521456"
-    },
-    {
-        "id": "24",
-        "title": "3006 Removal",
-        "building": "3000",
-        "type": "Removal",
-        "summary": "Removal",
-        "imgUrl": "images/1694382711003.jpeg",
-        "xPt": "0.2933730454206999",
-        "yPt": "0.8097723701944198"
-    },
-    {
-        "id": "25",
-        "title": "3006 REmovals",
-        "building": "3000",
-        "type": "Removal",
-        "summary": "Removal",
-        "imgUrl": "images/1694382780102.jpeg",
-        "xPt": "0.30305286671630677",
-        "yPt": "0.8246647356232828"
-    },
-    {
-        "id": "26",
-        "title": "Irrigation issue",
-        "building": "3000",
-        "type": "Repair",
-        "summary": "Gutter downspout extension has come loose.",
-        "imgUrl": "images/1694382957560.jpeg",
-        "xPt": "0.35591958302308263",
-        "yPt": "0.8544494664810085"
-    },
-    {
-        "id": "27",
-        "title": "3006 Removal",
-        "building": "3000",
-        "type": "Removal",
-        "summary": "Removal",
-        "imgUrl": "images/1694383009879.jpeg",
-        "xPt": "0.344005956813105",
-        "yPt": "0.8246647356232828"
-    },
-    {
-        "id": "28",
-        "title": "3006 repair or removal debris",
-        "building": "3000",
-        "type": "Removal",
-        "summary": "Removal",
-        "imgUrl": "images/1694383052066.jpeg",
-        "xPt": "0.3574087862993299",
-        "yPt": "0.8190800985874591"
     }, 
     {
-        "id": "29",
+        "id": "23",
         "title": "Remove overgrowth",
         "building": "Dog park",
         "type": "Removal",
