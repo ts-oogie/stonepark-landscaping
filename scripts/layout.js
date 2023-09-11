@@ -27,9 +27,7 @@ function setVars() {
      numToNegSmall = (windowSmallRatio * -1) - 53;
      winSmallNeg = ((windowSmallRatio * -1) + navMargin) + 20;
 }
-setVars();
-
- 
+setVars(); 
 
 function adjustNav() { 
     if ((windowWidth <= 550) && (windowTop <= windowRatio)) {
@@ -39,7 +37,7 @@ function adjustNav() {
 
 //The background imagerfader
 function imageSlide() {
-    slides = [];
+    let slides = [];
     //Make sure that the IMG SRC height is set to headheight
     //$('#img-header').css("height" : headHeight);
     $('.header-container').css({"height" : headHeight});
@@ -73,10 +71,7 @@ $(document).ready(function(e) {
     let taskPoint = []
     let percentWidth
     let percentHeight
-    let screenLocked = false  
-
-     
-     
+    let screenLocked = false   
 
     const today = new Date();
     let yyyy = today.getFullYear();
@@ -162,9 +157,7 @@ $(document).ready(function(e) {
           $('#header-container').append('<a class="task-point-a"><div id="' + data.id + '" class="'+ thisClass + '" style="left:' + ((data.xPt*winWidth)-calibrationX) + 'px; top:' + ((data.yPt*winHeight)-calibrationY) + 'px;"></div></a>')
      
         })  
-    })  
-
-     
+    })   
 
     $('#overlaycontainer').on('click',  function(e){  
       $('#overlaycontainer').css('width', '85%')

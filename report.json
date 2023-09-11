@@ -148,5 +148,145 @@
         "imgUrl": "images/1694268022553.jpeg",
         "xPt": "0.09421841541755889",
         "yPt": "0.6834403997144897"
-    }
+    },
+    {
+        "id": "16",
+        "title": "3000 Front Right",
+        "building": "3000",
+        "type": "Design",
+        "summary": "Yellow Objects are new. Green objects are existing.",
+        "imgUrl": "images/1694321819708.jpg",
+        "xPt": "0.3486111111111111",
+        "yPt": "0.765625"
+    },
+    {
+        "id": "17",
+        "title": "Remove tree and nandina ",
+        "building": "1200",
+        "type": "Removal",
+        "summary": "Remove large tree. Remove plants in front of rails, They are toxic to dogs and cats. A cat was recently found dead- It may have died from ingesting the leaves of this plant. Plants can be found around 1200 Building",
+        "imgUrl": "images/1694321976283.jpeg",
+        "xPt": "0.42291666666666666",
+        "yPt": "0.6111111111111112"
+    },
+    {
+        "id": "18",
+        "title": "Remove pine tree",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "See photo",
+        "imgUrl": "images/1694322398473.jpeg",
+        "xPt": "0.34375",
+        "yPt": "0.21006944444444445"
+    },
+    {
+        "id": "19",
+        "title": "Remove pine tree",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "See photo",
+        "imgUrl": "images/1694322477619.jpeg",
+        "xPt": "0.3111111111111111",
+        "yPt": "0.1597222222222222"
+    },
+    {
+        "id": "20",
+        "title": "Remove marked trees",
+        "building": "2000",
+        "type": "Removal",
+        "summary": "See photo. There are several in the area.",
+        "imgUrl": "images/1694322645481.jpeg",
+        "xPt": "0.14444444444444443",
+        "yPt": "0.9861111111111112"
+    },
+    {
+        "id": "21",
+        "title": "3006 outside debris",
+        "building": "3000",
+        "type": "Removal",
+        "summary": "Need to remove all the debris they have blown up against my condo. i.e., leaves, debris etc.",
+        "imgUrl": "images/1694381158984.jpeg",
+        "xPt": "0.3462397617274758",
+        "yPt": "0.8712033775884793"
+    },
+    {
+        "id": "22",
+        "title": "3006 outside debris",
+        "building": "3000",
+        "type": "Repair",
+        "summary": "Need to repair or remove debris",
+        "imgUrl": "images/1694382372257.jpeg",
+        "xPt": "0.3276247207743857",
+        "yPt": "0.8525879208024006"
+    },
+    {
+        "id": "23",
+        "title": "3006 repair or removal debris",
+        "building": "3000",
+        "type": "Removal",
+        "summary": "Remove or repair.",
+        "imgUrl": "images/1694382601773.jpeg",
+        "xPt": "0.31347728965003724",
+        "yPt": "0.8395571010521456"
+    },
+    {
+        "id": "24",
+        "title": "3006 Removal",
+        "building": "3000",
+        "type": "Removal",
+        "summary": "Removal",
+        "imgUrl": "images/1694382711003.jpeg",
+        "xPt": "0.2933730454206999",
+        "yPt": "0.8097723701944198"
+    },
+    {
+        "id": "25",
+        "title": "3006 REmovals",
+        "building": "3000",
+        "type": "Removal",
+        "summary": "Removal",
+        "imgUrl": "images/1694382780102.jpeg",
+        "xPt": "0.30305286671630677",
+        "yPt": "0.8246647356232828"
+    },
+    {
+        "id": "26",
+        "title": "3006 Removal",
+        "building": "3000",
+        "type": "Removal",
+        "summary": "Removal",
+        "imgUrl": "images/1694382957560.jpeg",
+        "xPt": "0.35591958302308263",
+        "yPt": "0.8544494664810085"
+    },
+    {
+        "id": "27",
+        "title": "3006 Removal",
+        "building": "3000",
+        "type": "Removal",
+        "summary": "Removal",
+        "imgUrl": "images/1694383009879.jpeg",
+        "xPt": "0.344005956813105",
+        "yPt": "0.8246647356232828"
+    },
+    {
+        "id": "28",
+        "title": "3006 repair or removal debris",
+        "building": "3000",
+        "type": "Removal",
+        "summary": "Removal",
+        "imgUrl": "images/1694383052066.jpeg",
+        "xPt": "0.3574087862993299",
+        "yPt": "0.8190800985874591"
+    }, 
+    {
+        "id": "29",
+        "title": "Remove overgrowth",
+        "building": "Dog park",
+        "type": "Removal",
+        "summary": "Remove Juniper and vines. All bushes should clear fence.",
+        "imgUrl": "images/1694385102019.jpeg",
+        "xPt": "0.6104166666666667",
+        "yPt": "0.453125"
+    } 
 ]

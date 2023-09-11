@@ -61,10 +61,13 @@ app.post('/history', urlencodedParser, (req, res)=>{
     
     //var obj = Object.keys(req.body)[0];
     //console.log(JSON.parse(JSON.stringify(obj))); 
-});
-
+}); 
 
 app.post('/upload', upload.any(), (req, res)=>{
+
+    //**************** September 10, 2023 : ****************
+    //if there is a req, send email via node mailer to beautifyStonepark@gmail.com
+        //as a part of email, send image url, title, id, summary, type, building number
     
     let formData = req.body
     let imgPath = req.files[0].path 
