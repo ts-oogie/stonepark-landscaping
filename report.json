@@ -208,15 +208,5 @@
         "imgUrl": "images/1694381158984.jpeg",
         "xPt": "0.3462397617274758",
         "yPt": "0.8712033775884793"
-    }, 
-    {
-        "id": "23",
-        "title": "Remove overgrowth",
-        "building": "Dog park",
-        "type": "Removal",
-        "summary": "Remove Juniper and vines. All bushes should clear fence.",
-        "imgUrl": "images/1694385102019.jpeg",
-        "xPt": "0.6104166666666667",
-        "yPt": "0.453125"
     } 
 ]
