@@ -59,7 +59,7 @@ function clearBoxes(){
 
 $(document).ready(function(e) { 
 
-    let url = 'https://stonepark-beautification-committee.onrender.com/'
+    let url = 'https://beautify-stonepark-f8af732df93d.herokuapp.com/'
     let homeUrl = url
     let newUrl 
 
