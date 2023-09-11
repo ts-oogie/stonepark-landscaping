@@ -251,10 +251,10 @@
     },
     {
         "id": "26",
-        "title": "3006 Removal",
+        "title": "Irrigation issue",
         "building": "3000",
-        "type": "Removal",
-        "summary": "Removal",
+        "type": "Repair",
+        "summary": "Gutter downspout extension has come loose.",
         "imgUrl": "images/1694382957560.jpeg",
         "xPt": "0.35591958302308263",
         "yPt": "0.8544494664810085"
