@@ -208,5 +208,125 @@
         "imgUrl": "images/1694381158984.jpeg",
         "xPt": "0.3462397617274758",
         "yPt": "0.8712033775884793"
-    } 
+    },
+    {
+        "id": "22",
+        "title": "Re-Attach downspout",
+        "building": "3000",
+        "type": "Repair",
+        "summary": "Hose has come loose. Re-attach.",
+        "imgUrl": "images/1694408871364.jpg",
+        "xPt": "0.33671875",
+        "yPt": "0.86328125"
+    },
+    {
+        "id": "23",
+        "title": "Bush clearance",
+        "building": "Tennis Court",
+        "type": "Not Specified",
+        "summary": "Bushes should be clear from fence.",
+        "imgUrl": "images/1694408965717.jpg",
+        "xPt": "0.51171875",
+        "yPt": "0.3984375"
+    },
+    {
+        "id": "24",
+        "title": "Remove overgrown Juniper",
+        "building": "Tennis Court",
+        "type": "Removal",
+        "summary": "Remove juniper they are overgrown.",
+        "imgUrl": "images/1694409035151.jpeg",
+        "xPt": "0.48984375",
+        "yPt": "0.349609375"
+    },
+    {
+        "id": "25",
+        "title": "Remove pine trees",
+        "building": "9000",
+        "type": "Removal",
+        "summary": "Remove these two pine trees.",
+        "imgUrl": "images/1694409093208.jpeg",
+        "xPt": "0.334375",
+        "yPt": "0.537109375"
+    },
+    {
+        "id": "26",
+        "title": "Remove overgrown Juniper",
+        "building": "1200",
+        "type": "Removal",
+        "summary": "It could become a potential hiding space for suspicious persons.",
+        "imgUrl": "images/1694409902152.jpg",
+        "xPt": "0.4515625",
+        "yPt": "0.5546875"
+    },
+    {
+        "id": "27",
+        "title": "Remove pine tree",
+        "building": "7000",
+        "type": "Removal",
+        "summary": "Please remove",
+        "imgUrl": "images/1694484850297.jpg",
+        "xPt": "0.2359375",
+        "yPt": "0.513671875"
+    },
+    {
+        "id": "28",
+        "title": "Remove pine tree",
+        "building": "7000",
+        "type": "Removal",
+        "summary": "Too close to building",
+        "imgUrl": "images/1694484906287.jpg",
+        "xPt": "0.23828125",
+        "yPt": "0.431640625"
+    },
+    {
+        "id": "29",
+        "title": "Fix grading",
+        "building": "7000",
+        "type": "Repair",
+        "summary": "Grade soil in front of porch to make sure water does not pool.",
+        "imgUrl": "images/1694486286380.jpg",
+        "xPt": "0.24375",
+        "yPt": "0.41015625"
+    },
+    {
+        "id": "30",
+        "title": "Tree stumps",
+        "building": "7000",
+        "type": "Removal",
+        "summary": "Stumps need to be removed.",
+        "imgUrl": "images/1694486832044.jpg",
+        "xPt": "0.25078125",
+        "yPt": "0.51953125"
+    },
+    {
+        "id": "31",
+        "title": "Align hedges",
+        "building": "7000",
+        "type": "Removal",
+        "summary": "This applies to all sides of building.",
+        "imgUrl": "images/1694487808925.jpg",
+        "xPt": "0.28671875",
+        "yPt": "0.40234375"
+    },
+    {
+        "id": "32",
+        "title": "Remove debris against building",
+        "building": "7000",
+        "type": "Removal",
+        "summary": "Leaves and twigs are being blown back behind hedges and hvac units by landscapers.",
+        "imgUrl": "images/1694488175567.jpg",
+        "xPt": "0.27109375",
+        "yPt": "0.509765625"
+    },
+    {
+        "id": "33",
+        "title": "Bury tree roots",
+        "building": "7000",
+        "type": "Repair",
+        "summary": "Build up soil around all exposed roots around building 7000.",
+        "imgUrl": "images/1694490258986.jpg",
+        "xPt": "0.2859375",
+        "yPt": "0.490234375"
+    }
 ]
