@@ -328,5 +328,25 @@
         "imgUrl": "images/1694490258986.jpg",
         "xPt": "0.2859375",
         "yPt": "0.490234375"
+    },
+    {
+        "id": "34",
+        "title": "Mailroom Pine Tree",
+        "building": "Clubhouse",
+        "type": "Removal",
+        "summary": "Remove pine tree behind mail room",
+        "imgUrl": "images/1694492964459.jpg",
+        "xPt": "0.296875",
+        "yPt": "0.513671875"
+    },
+    {
+        "id": "35",
+        "title": "Remove bushes",
+        "building": "Tennis Courts",
+        "type": "Removal",
+        "summary": "Remove bushes behind trees. Trees in front to remain.",
+        "imgUrl": "images/1694493496895.png",
+        "xPt": "0.5513888888888889",
+        "yPt": "0.4027777777777778"
     }
 ]
