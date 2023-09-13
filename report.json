@@ -348,5 +348,85 @@
         "imgUrl": "images/1694493496895.png",
         "xPt": "0.5513888888888889",
         "yPt": "0.4027777777777778"
+    },
+    {
+        "id": "36",
+        "title": "Juniper overgrowth",
+        "building": "1300",
+        "type": "Removal",
+        "summary": "Remove overgrown juniper.",
+        "imgUrl": "images/1694496581454.jpg",
+        "xPt": "0.4984375",
+        "yPt": "0.515625"
+    },
+    {
+        "id": "37",
+        "title": "Remove small plants",
+        "building": "7000",
+        "type": "Removal",
+        "summary": "Remove all smaller shrubs and plants growing around building that seem out of place.",
+        "imgUrl": "images/1694500034898.jpg",
+        "xPt": "0.23046875",
+        "yPt": "0.474609375"
+    },
+    {
+        "id": "38",
+        "title": "Remove small plants & vines",
+        "building": "9000",
+        "type": "Removal",
+        "summary": "Remove all small plants, ivy, and weeds growing around entire building under bushes.",
+        "imgUrl": "images/1694544953617.jpg",
+        "xPt": "0.315625",
+        "yPt": "0.537109375"
+    },
+    {
+        "id": "39",
+        "title": "Trim bushes - Remove debris",
+        "building": "9000",
+        "type": "Removal",
+        "summary": "Remove debris (pine cones, leaves, twigs) and trim bushes.",
+        "imgUrl": "images/1694546404056.jpg",
+        "xPt": "0.32265625",
+        "yPt": "0.416015625"
+    },
+    {
+        "id": "40",
+        "title": "Remove all stumps",
+        "building": "9000",
+        "type": "Removal",
+        "summary": "Remove all stumps found around building.",
+        "imgUrl": "images/1694546552473",
+        "xPt": "0.3484375",
+        "yPt": "0.51953125"
+    },
+    {
+        "id": "41",
+        "title": "Remove debris",
+        "building": "9000",
+        "type": "Removal",
+        "summary": "Around entire building : remove all pine cones, twigs, sticks, and leaves on lawn. Pine straw to remain.",
+        "imgUrl": "images/1694546875803.jpg",
+        "xPt": "0.30546875",
+        "yPt": "0.41796875"
+    },
+    {
+        "id": "42",
+        "title": "Remove Tree and dead plants",
+        "building": "9000",
+        "type": "Removal",
+        "summary": "Remove dead or dying plants. Remove tree to allow more sunlight",
+        "imgUrl": "images/1694552649809.jpg",
+        "xPt": "0.31015625",
+        "yPt": "0.341796875"
+    },
+    {
+        "id": "43",
+        "title": "Trim bushes - Remove debris",
+        "building": "9000",
+        "type": "Removal",
+        "summary": "Deficient landscaping work. Trim and remove debris around entire building.",
+        "imgUrl": "images/1694576380208.jpg",
+        "xPt": "0.34609375",
+        "yPt": "0.484375"
     }
 ]
