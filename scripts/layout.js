@@ -200,7 +200,7 @@ $(document).ready(function(e) {
     })
 
     $(document).on('click', 'button#cancel', ()=>{
-      alert
+      
 
       let thisEl = id+1
       let thisStr = thisEl.toString()
@@ -261,9 +261,7 @@ $(document).ready(function(e) {
 
     })
 
-    $('#point-container').on('click', (e)=>{    
-
-      alert("worked")
+    $('#point-container').on('click', (e)=>{     
 
       if (screenLocked == false){ 
 
