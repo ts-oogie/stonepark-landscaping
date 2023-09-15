@@ -154,7 +154,7 @@ $(document).ready(function(e) {
           id++
           projectArr.push(data)  
 
-          $('#header-container').append('<a class="task-point-a"><div id="' + data.id + '" class="'+ thisClass + '" style="left:' + ((data.xPt*winWidth)-calibrationX) + 'px; top:' + ((data.yPt*winHeight)-calibrationY) + 'px;"></div></a>')
+          $('#point-container').append('<a class="task-point-a"><div id="' + data.id + '" class="'+ thisClass + '" style="left:' + ((data.xPt*winWidth)-calibrationX) + 'px; top:' + ((data.yPt*winHeight)-calibrationY) + 'px;"></div></a>')
      
         })  
     })   
