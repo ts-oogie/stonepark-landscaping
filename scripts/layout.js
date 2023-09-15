@@ -261,7 +261,9 @@ $(document).ready(function(e) {
 
     })
 
-    $('#img-header').on('click', (e)=>{    
+    $('#point-container').on('click', (e)=>{    
+
+      alert("worked")
 
       if (screenLocked == false){ 
 
@@ -285,7 +287,7 @@ $(document).ready(function(e) {
         //append task-point marker
         taskPoint.push(percentWidth)
         taskPoint.push(percentHeight)
-        $('#header-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + ((taskPoint[0]*winWidth)-calibrationX) + 'px; top:' + ((taskPoint[1]*winHeight)-calibrationY) + 'px;"></div>')
+        $('#point-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + ((taskPoint[0]*winWidth)-calibrationX) + 'px; top:' + ((taskPoint[1]*winHeight)-calibrationY) + 'px;"></div>')
     
         //reset variables and lock screen until form submit complete
         setTimeout(()=>{
