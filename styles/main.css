@@ -75,13 +75,13 @@ i {
     z-index: 105;
 }
 
-.task-point-1 {
+.task-point-a {
     position: absolute;
     border: red solid 4px;
     border-radius: 2px;
     height: 8px;
     width: 8px; 
-    z-index: 100;
+    z-index: 105;
 }
 
 .task-repair {
