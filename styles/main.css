@@ -633,6 +633,37 @@ p.contact-input-label {
     font-family: Dosis;
 }
 
+#legend-container {
+    display : block;
+    position: absolute;
+    width : 200px;
+    height: 300px;
+    right : 100px;
+    top : 100px;
+    z-index: 100;
+    background-color : rgb(17, 17, 17);
+    border-radius : 20px;
+    opacity : 75%;
+    padding-top : 10px;
+    padding-left: 20px;
+}
+
+#legend-container h2 {
+    text-align: center;
+    margin-top : 10px;
+    margin-left : -20px;
+}
+
+#legend-container h3 {  
+    margin-left : 10px; 
+
+}
+
+.legend-list h3 {
+    margin-top : 5px;
+    line-height: 10px;
+}
+
 /***** INDEX *****/
 .index-container {
     margin: 0 auto; 
