@@ -70,17 +70,17 @@ i {
     position: absolute;
     border: red solid 4px;
     border-radius: 2px;
-    height: 6px;
-    width: 6px; 
+    height: 8px;
+    width: 8px; 
     z-index: 100;
 }
 
-.task-point-a {
+.task-point-1 {
     position: absolute;
     border: red solid 4px;
     border-radius: 2px;
-    height: 6px;
-    width: 6px; 
+    height: 8px;
+    width: 8px; 
     z-index: 100;
 }
 
@@ -88,8 +88,8 @@ i {
     position: absolute;
     border: yellow solid 4px;
     border-radius: 2px;
-    height: 6px;
-    width: 6px; 
+    height: 8px;
+    width: 8px; 
     z-index: 100;
 }
 
@@ -97,8 +97,8 @@ i {
     position: absolute; 
     background-color : green;
     border-radius: 50%;
-    height: 12px;
-    width: 12px; 
+    height: 16px;
+    width: 16px; 
     z-index: 100;
 }
 
@@ -106,8 +106,8 @@ i {
     position: absolute;
     border: blue solid 4px;
     border-radius: 2px;
-    height: 6px;
-    width: 6px; 
+    height: 8px;
+    width: 8px; 
     z-index: 100;
 }
 
@@ -115,8 +115,8 @@ i {
     position: absolute;
     border: grey solid 4px;
     border-radius: 2px;
-    height: 6px;
-    width: 6px; 
+    height: 8px;
+    width: 8px; 
     z-index: 100;
 }
 
