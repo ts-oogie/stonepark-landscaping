@@ -139,7 +139,7 @@ $(document).ready(function(e) {
     $.getJSON("/json", (result)=>{ 
       
         $.each(result, (index, data)=>{  
-          console.log(data.type)
+           
           let thisClass
           if(data.type == "Repair" || data.type == "Not Specified"){
             thisClass = 'task-repair'
@@ -153,7 +153,7 @@ $(document).ready(function(e) {
 
           id++
           projectArr.push(data)  
-
+          //change to
           $('#header-container').append('<a class="task-point-a"><div id="' + data.id + '" class="'+ thisClass + '" style="left:' + ((data.xPt*winWidth)-calibrationX) + 'px; top:' + ((data.yPt*winHeight)-calibrationY) + 'px;"></div></a>')
      
         })  
@@ -260,7 +260,7 @@ $(document).ready(function(e) {
       }
 
     })
-
+    //change to point-container
     $('#img-header').on('click', (e)=>{    
 
       if (screenLocked == false){ 
@@ -285,6 +285,8 @@ $(document).ready(function(e) {
         //append task-point marker
         taskPoint.push(percentWidth)
         taskPoint.push(percentHeight)
+
+        //change to point-container
         $('#header-container').append('<div id="' + (id+1) + '" class="' + 'task-point'+ '" style="left:' + ((taskPoint[0]*winWidth)-calibrationX) + 'px; top:' + ((taskPoint[1]*winHeight)-calibrationY) + 'px;"></div>')
     
         //reset variables and lock screen until form submit complete

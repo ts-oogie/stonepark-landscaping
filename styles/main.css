@@ -280,6 +280,10 @@ body {
     top: 0;
 }
 
+#point-container {
+
+}
+
 #layer-container {
     display : block;
     position: absolute;
@@ -293,7 +297,7 @@ body {
 #point-container {
     display : block;
     position: absolute;
-    z-index : 100;
+    z-index : 70;
     top : 0;
     width: 100%;
     height: 100%; 
