@@ -4,6 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
 
+const NODE_VERSION = '14.17.0'
+
 const multer = require('multer');
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
