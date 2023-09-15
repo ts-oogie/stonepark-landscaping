@@ -635,8 +635,7 @@ p.contact-input-label {
 
 /***** INDEX *****/
 .index-container {
-    margin: 0 auto;
-    padding-top: 50px;
+    margin: 0 auto; 
     max-width: 950px;
     z-index: 100;
     position: relative;
