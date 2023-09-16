@@ -656,8 +656,7 @@ p.contact-input-label {
 }
 
 #legend-container h3 {  
-    margin-left : 10px; 
-
+    margin-left : 10px;  
 }
 
 .legend-list h3 {
@@ -665,6 +664,17 @@ p.contact-input-label {
     line-height: 10px;
 }
 
+.legend-list input {
+    margin-left: 1px;
+}
+
+.grass-layer h3 {
+    margin-top : -15px;
+}
+
+.shade-layer h3 {
+    margin-top : -15px;
+}
 /***** INDEX *****/
 .index-container {
     margin: 0 auto; 

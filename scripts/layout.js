@@ -1,99 +1,44 @@
-//Sets and resets variables when window is resized and scrolled
-function setVars() {
-    //Window Scroll top location
-     windowTop = $(window).scrollTop();
-
-     //Window width
-     windowWidth = $(window).width();
-
-     //Height of the img header in pixels
-     windowRatio = (windowWidth / 3.25) + 9;
-
-     //Height of the img header plus offset adjustment for spacing discrepancy in the nav bar
-     windowRatioPlus = (windowWidth / 3.25) + 15;
-
-     //Height of the small img header 
-     windowSmallRatio = (windowWidth / 3.25);
-
-     //Location of the top of the nav bar relative to the img header
-     navMargin = windowWidth / 10.5; 
-
-     //Neg value of the above
-     negMargin = navMargin * -1;
-
-
-     //Img header minus height of the nav bar location
-     numToNeg = ((windowRatio * -1) - navMargin) + 6;
-     numToNegSmall = (windowSmallRatio * -1) - 53;
-     winSmallNeg = ((windowSmallRatio * -1) + navMargin) + 20;
-}
-setVars(); 
-
-function adjustNav() { 
-    if ((windowWidth <= 550) && (windowTop <= windowRatio)) {
-        $('#app').css({"margin-top" : "20px"});
-    }
-}
-
-//The background imagerfader
-function imageSlide() {
-    let slides = [];
-    //Make sure that the IMG SRC height is set to headheight
-    //$('#img-header').css("height" : headHeight);
-    $('.header-container').css({"height" : headHeight});
-    //Grab all the img elements with the id of image-loader
-    slides = $('#image-loader img');
-    //Get the number of elements pulled and save as variable
-    var slideCount = slides.length; 
-    //Create an empty array container
-    var slideSrc = []; 
-    
-} 
-
-function clearBoxes(){
-  const boxes = document.querySelectorAll('.task-point'); 
-    boxes.forEach(box => {
-      box.remove();
-    }); 
-} 
 
 $(document).ready(function(e) { 
 
-    let url = 'https://beautify-stonepark-f8af732df93d.herokuapp.com/'
-    let homeUrl = url
-    let newUrl 
+  let url = 'https://beautify-stonepark-f8af732df93d.herokuapp.com/'
+  let homeUrl = url
+  let newUrl 
 
-    let id = 0 
-    let historyId = 0
-    let historyArr = []
-    let projectArr = []  
+  let id = 0 
+  let historyId = 0
+  let historyArr = []
+  let projectArr = []  
 
-    let taskPoint = []
-    let percentWidth
-    let percentHeight
-    let screenLocked = false   
+  let taskPoint = []
+  let percentWidth
+  let percentHeight
+  let screenLocked = false   
 
-    const today = new Date();
-    let yyyy = today.getFullYear();
-    let mm = today.getMonth() + 1; // Months start at 0!
-    let dd = today.getDate();
+  let grassChecked = false
+  let shadeChecked = false
 
-    if (dd < 10) dd = '0' + dd;
-    if (mm < 10) mm = '0' + mm;
+  const today = new Date();
+  let yyyy = today.getFullYear();
+  let mm = today.getMonth() + 1; // Months start at 0!
+  let dd = today.getDate();
 
-    let formattedToday = dd + '/' + mm + '/' + yyyy; 
-    let time = today.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true})
+  if (dd < 10) dd = '0' + dd;
+  if (mm < 10) mm = '0' + mm;
 
+  let formattedToday = dd + '/' + mm + '/' + yyyy; 
+  let time = today.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true}) 
 
-    setInterval(()=>{
-      $.getJSON(url + "json", (result)=>{   
-        console.log("++++++++++++++++++++")
-        console.log(formattedToday + " Time: " + time )
-        console.log(result) 
-      })  
-    }, 3600000) 
-    //Sept 7, 2023 : post
-    
+  //printing out json
+  setInterval(()=>{
+    $.getJSON(url + "json", (result)=>{   
+      console.log("++++++++++++++++++++")
+      console.log(formattedToday + " Time: " + time )
+      console.log(result) 
+    })  
+  }, 3600000) 
+
+  //Sept 7, 2023 : post 
  
   setTimeout(()=>{
     
@@ -101,9 +46,7 @@ $(document).ready(function(e) {
     let calibrationY = 8
 
     let winWidth = $('#img-header').width()
-    let winHeight = $('#img-header').height() 
-
-    
+    let winHeight = $('#img-header').height()   
 
     if (window.sessionStorage.getItem("pageLoaded") == null){
           window.sessionStorage.setItem("pageLoaded", true)
@@ -199,23 +142,64 @@ $(document).ready(function(e) {
 
     })
 
-    $(document).on('click', 'button#cancel', ()=>{
-      alert
+    $(document).on('click', 'button#cancel', ()=>{ 
 
-      let thisEl = id+1
-      let thisStr = thisEl.toString()
-      
-      $('#overlaycontainer2').css('width', '500px')
-      $('#overlay-form').empty()
-      $('#overlaycontainer2').css('visibility', 'hidden' ); 
-      
-      $('#overlaycontainer').css('width', '85%')
-      $('#overlay-app').empty()
-      $('#overlaycontainer').css('visibility', 'hidden' );
-      document.getElementById(thisStr).remove()
-      screenLocked = false
-      window.location.replace(url + '#/');  
+        let thisEl = id+1
+        let thisStr = thisEl.toString()
+        
+        $('#overlaycontainer2').css('width', '500px')
+        $('#overlay-form').empty()
+        $('#overlaycontainer2').css('visibility', 'hidden' ); 
+        
+        $('#overlaycontainer').css('width', '85%')
+        $('#overlay-app').empty()
+        $('#overlaycontainer').css('visibility', 'hidden' );
+        document.getElementById(thisStr).remove()
+        screenLocked = false
+        window.location.replace(url + '#/');  
+
     }) 
+
+    $(document).on('click', '#grass', (e)=>{
+
+        grassChecked = !grassChecked
+        $('#grass').prop('checked', grassChecked)
+        
+        if(grassChecked == true && shadeChecked == false){
+          
+          $('#img-header').attr('src', 'images/Leeches-Header-3-Large.jpg') 
+        }
+        else if(grassChecked == true && shadeChecked == true){
+          $('#img-header').attr('src', 'images/Leeches-Header-4-Large.jpg') 
+        } 
+        else if(grassChecked == false && shadeChecked == true){
+          $('#img-header').attr('src', 'images/Leeches-Header-2-Large.jpg')  
+        }
+        else{
+          $('#img-header').attr('src', 'images/Leeches-Header-5-Large.jpg')  
+        }
+
+    })
+
+    $(document).on('click', '#shade', (e)=>{
+
+      shadeChecked = !shadeChecked
+      $('#shade').prop('checked', shadeChecked)
+      
+      if(grassChecked == true && shadeChecked == false){ 
+        $('#img-header').attr('src', 'images/Leeches-Header-3-Large.jpg') 
+      }
+      else if(grassChecked == true && shadeChecked == true){
+        $('#img-header').attr('src', 'images/Leeches-Header-4-Large.jpg') 
+      } 
+      else if(grassChecked == false && shadeChecked == true){
+        $('#img-header').attr('src', 'images/Leeches-Header-2-Large.jpg')  
+      }
+      else{
+        $('#img-header').attr('src', 'images/Leeches-Header-5-Large.jpg')  
+      }
+
+  })
 
     $('#team').on('click', (e)=>{
 
@@ -310,6 +294,65 @@ $(document).ready(function(e) {
   }, 1000)
   
 });
+
+//Sets and resets variables when window is resized and scrolled
+function setVars() {
+  //Window Scroll top location
+   windowTop = $(window).scrollTop();
+
+   //Window width
+   windowWidth = $(window).width();
+
+   //Height of the img header in pixels
+   windowRatio = (windowWidth / 3.25) + 9;
+
+   //Height of the img header plus offset adjustment for spacing discrepancy in the nav bar
+   windowRatioPlus = (windowWidth / 3.25) + 15;
+
+   //Height of the small img header 
+   windowSmallRatio = (windowWidth / 3.25);
+
+   //Location of the top of the nav bar relative to the img header
+   navMargin = windowWidth / 10.5; 
+
+   //Neg value of the above
+   negMargin = navMargin * -1;
+
+
+   //Img header minus height of the nav bar location
+   numToNeg = ((windowRatio * -1) - navMargin) + 6;
+   numToNegSmall = (windowSmallRatio * -1) - 53;
+   winSmallNeg = ((windowSmallRatio * -1) + navMargin) + 20;
+}
+setVars(); 
+
+function adjustNav() { 
+  if ((windowWidth <= 550) && (windowTop <= windowRatio)) {
+      $('#app').css({"margin-top" : "20px"});
+  }
+}
+
+//The background imagerfader
+function imageSlide() {
+  let slides = [];
+  //Make sure that the IMG SRC height is set to headheight
+  //$('#img-header').css("height" : headHeight);
+  $('.header-container').css({"height" : headHeight});
+  //Grab all the img elements with the id of image-loader
+  slides = $('#image-loader img');
+  //Get the number of elements pulled and save as variable
+  var slideCount = slides.length; 
+  //Create an empty array container
+  var slideSrc = []; 
+  
+} 
+
+function clearBoxes(){
+const boxes = document.querySelectorAll('.task-point'); 
+  boxes.forEach(box => {
+    box.remove();
+  }); 
+} 
 
  
  
