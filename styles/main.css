@@ -225,11 +225,7 @@ body {
     width: 100%;
 }
 
-.app {
-    margin: 0 auto;
-    z-index: 50;
-    position: relative;
-}
+ 
 
 .main-container {
     position: relative;  
@@ -309,8 +305,19 @@ body {
     width: 100%;
 }
 
+#img-bg {
+    display : block;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
 #img-grass {
     width: 100%;
+}
+
+#updates {
+    margin : auto;
 }
 
 #img-header {
@@ -780,50 +787,8 @@ p.contact-input-label {
     padding-left: 10px;
 }
 
-.cast-view {
-    margin: auto;
-    width: 50%; 
-    padding: 10px;
-}
-
-#crew_1 {
-    margin: auto;
-    width: 50%; 
-    padding: 10px; 
-    border: 1px solid green;
-} 
-#crew-center {
-    margin: auto;
-    width: 50%; 
-    padding: 10px;  
-}
-
-.cast-view h2 {
-    color : #5b4e67;
-    font-size: 1.7rem;
-}
-
-.cast-view-col-1 {
-    position: relative;
-    float: left;
-    line-height: 10px;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    border: 1px solid green; 
-    display : block;
-    min-width : 400px;;
-}
-
-.cast-view-col-2 {
-    position: relative;
-    float: left;
-    line-height: 10px;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    border: 1px solid green;
-    display : inline-block;
-}
-
+ 
+ 
 /***** NEWS *****/
 .news-container {
     padding-top: 32px;

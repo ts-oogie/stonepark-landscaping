@@ -1,0 +1,177 @@
+/* Space out content a bit */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"); 
+@import url('https://fonts.googleapis.com/css?family=Dosis|Limelight|Tulpen+One|Francois+One|Philosopher|Patua+One|Ubuntu+Mono');
+ 
+html {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: rgba(255,255,255,0.01) 0.1px;
+}
+
+html, body {
+
+margin-right: -11px;
+margin:0;
+
+padding:0; 
+
+}
+
+a {
+    text-decoration: none; 
+    color: blue;
+    font-size: 1.25rem;
+    font-family: Dosis;   
+} 
+
+li {
+    text-decoration: none; 
+    color: #ffffe4;
+    font-size: 1.25rem;
+    font-family: Dosis;    
+    padding-right: 10px;
+} 
+
+h1 {
+    padding-left: 10px;
+    color: #ffffe4;
+    margin-top: 20px;
+    font-family: Tulpen One;
+    font-size: 3rem;
+    line-height: 5px;  
+}
+ 
+h2 {
+    padding-left: 10px;
+    color: #ffffe4;
+    margin-top: 10px;
+    font-family: Tulpen One;
+    font-size: 2.1rem;
+    line-height: 5px;
+}
+
+h3{
+    padding-left: 10px;
+    color: #f1ece2;
+    margin-top: 0px;
+    font-family: Dosis;
+    font-size: 1rem;
+    line-height: 5px;
+}
+
+p {
+    color: #ffffe4;
+    font-size: 1.25rem;
+    font-family: Dosis;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+i {
+    font-size: 1rem;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #abb088;
+   
+}
+ 
+#img-bg {
+    width: 100%;
+}
+
+.main-container {
+    position: relative;  
+    margin: 0 auto;
+    background-color: #9ac768;
+}
+ 
+
+#app {
+    margin-top: -25px; 
+    width : 100%;
+    height: 50px;
+    background-color : black;
+}
+
+#updateHeader {
+    text-align : center;
+    position: relative;
+    display: block;
+    line-height: 50px;
+}  
+
+    
+ 
+
+@media (max-width: 1001px) {
+     
+}
+
+ 
+
+@media (min-width: 800px) and (max-width: 1000px){ 
+    #app { 
+        width : 100%;
+        height: 40px;
+        background-color : black;
+    } 
+    #updateHeader {
+        text-align : center;
+        position: relative;
+        display: block;
+        line-height: 40px;
+    } 
+    h1 {
+        font-size: 2.5rem;
+        line-height: 4px;  
+    }
+    
+}
+
+
+@media (min-width: 500px) and (max-width: 799px){ 
+    #app { 
+        width : 100%;
+        height: 35px;
+        background-color : black;
+    } 
+    #updateHeader {
+        text-align : center;
+        position: relative;
+        display: block;
+        line-height: 35px;
+    } 
+    h1 {
+        font-size: 2rem;
+        line-height: 3px;  
+    }
+}
+ 
+@media (min-width: 100px) and (max-width: 499px){ 
+    #app { 
+        width : 100%;
+        height: 30px;
+        background-color : black;
+    } 
+    #updateHeader {
+        text-align : center;
+        position: relative;
+        display: block;
+        line-height: 30px;
+    } 
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2px;  
+    }
+    p { 
+        font-size: 1rem; 
+    }
+    li {
+        font-size: 1rem;
+    }
+    a {  
+        font-size: 1rem; 
+    } 
+}
+ 

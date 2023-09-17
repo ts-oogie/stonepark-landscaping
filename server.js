@@ -34,6 +34,8 @@ const port = process.env.PORT || 8000;
 
 app.use('/images', express.static(__dirname + '/images'));  
 app.use('/styles', express.static(__dirname + '/styles'));  
+app.use('/updates/styles', express.static(__dirname + '/styles'));  
+app.use('/updates/images', express.static(__dirname + '/images'));  
 app.use('/scripts', express.static(__dirname + '/scripts'));
 
 app.use('/bower_components', express.static(__dirname + '/bower_components'));   
@@ -49,6 +51,11 @@ app.all('*', function(req, res, next) {
 app.get('/' , function(req, res ){ 
     res.sendFile(__dirname + '/home.html');
 });
+
+app.get('/updates/:id', (req, res)=>{
+    let htmlStr = req.params.id
+    res.sendFile(__dirname + '/updates/' + htmlStr + '.html')
+})
 
 app.get('/json', (req, res)=>{
     res.sendFile(__dirname + '/report.json');
