@@ -19,20 +19,26 @@ padding:0;
 a {
     text-decoration: none; 
     color: blue;
-    font-size: 1.25rem;
-    font-family: Dosis;   
+    font-size: 1.5rem;
+    font-family: Dosis;    
 } 
+
+ul {
+    padding-left : 120px;
+    padding-right: 120px;
+}
 
 li {
     text-decoration: none; 
     color: #ffffe4;
     font-size: 1.25rem;
-    font-family: Dosis;    
-    padding-right: 10px;
+    font-family: Dosis;   
+    font-size: 1.5rem; 
 } 
 
 h1 {
-    padding-left: 10px;
+    padding-left : 100px;
+    padding-right: 100px;
     color: #ffffe4;
     margin-top: 20px;
     font-family: Tulpen One;
@@ -60,10 +66,10 @@ h3{
 
 p {
     color: #ffffe4;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-family: Dosis;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left : 100px;
+    padding-right: 100px;
 }
 
 i {
@@ -73,7 +79,7 @@ i {
 body {
     margin: 0 auto;
     background-color: #abb088;
-   
+    
 }
  
 #img-bg {
@@ -145,6 +151,16 @@ body {
     h1 {
         font-size: 2rem;
         line-height: 3px;  
+        padding-left : 30px;
+        padding-right: 30px;
+    }
+    p {
+        padding-left : 30px;
+        padding-right: 30px;
+    } 
+    li {
+        padding-left : 30px;
+        padding-right: 30px;
     }
 }
  
@@ -163,15 +179,26 @@ body {
     h1 {
         font-size: 1.5rem;
         line-height: 2px;  
+        padding-left : 10px;
+        padding-right: 10px;
     }
     p { 
         font-size: 1rem; 
+        padding-left : 10px;
+        padding-right: 10px;
+    }
+    ul {
+        padding-left : 10px;
+        padding-right: 10px;
     }
     li {
         font-size: 1rem;
+        padding-left : 30px;
+        padding-right: 30px;
     }
     a {  
-        font-size: 1rem; 
+        font-size: 1rem;  
+        
     } 
 }
  
