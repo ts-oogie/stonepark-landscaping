@@ -93,7 +93,7 @@ i {
     z-index: 100;
 }
 
-.task-trim{
+.task-trim { 
     position: absolute; 
     background-color : purple;
     border-radius: 50%;

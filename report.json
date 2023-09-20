@@ -598,5 +598,25 @@
         "imgUrl": "images/1695240390996.jpeg",
         "xPt": "0.3511988716502116",
         "yPt": "0.2715149121631628"
+    },
+    {
+        "id": "61",
+        "title": "Remove dead plants",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove plants that look straggly or are dead. Area looks visually unruly.",
+        "imgUrl": "images/1695241952990.jpeg",
+        "xPt": "0.4026798307475317",
+        "yPt": "0.38611536210216013"
+    },
+    {
+        "id": "62",
+        "title": "Trim Bushes",
+        "building": "1100",
+        "type": "Trim",
+        "summary": "Trim bushes that look overgrown. Remove any small plants or weeds growing underneath that looks out of place.",
+        "imgUrl": "images/1695242092859.jpeg",
+        "xPt": "0.40691114245416077",
+        "yPt": "0.41961395516125166"
     }
 ]

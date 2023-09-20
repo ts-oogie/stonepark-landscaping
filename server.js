@@ -106,6 +106,9 @@ app.post('/upload', upload.any(), (req, res)=>{
     if (formData.removal){
         thisObj.type = "Removal"
     }
+    if (formData.trim){
+        thisObj.type = "Trim"
+    }   
 
     thisObj.summary = formData.summary
     thisObj.imgUrl = imgPath
