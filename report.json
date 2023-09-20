@@ -475,7 +475,7 @@
         "building": "1100",
         "type": "Removal",
         "summary": "Remove marked trees",
-        "imgUrl": "images/1695236974576.JPG",
+        "imgUrl": "images/1695236974576.jpeg",
         "xPt": "0.4619181946403385",
         "yPt": "0.34203826597177656"
     },
@@ -485,7 +485,7 @@
         "building": "1100",
         "type": "Removal",
         "summary": "Remove marked trees",
-        "imgUrl": "images/1695237081552.JPG",
+        "imgUrl": "images/1695237081552.jpeg",
         "xPt": "0.43582510578279265",
         "yPt": "0.3843522782569448"
     },
@@ -495,7 +495,7 @@
         "building": "8000",
         "type": "Removal",
         "summary": "Remove marked trees close to buildings 8000 and 1100",
-        "imgUrl": "images/1695237465816.JPG",
+        "imgUrl": "images/1695237465816.jpeg",
         "xPt": "0.3526093088857546",
         "yPt": "0.18688688759282637"
     },
@@ -505,7 +505,7 @@
         "building": "8000",
         "type": "Removal",
         "summary": "Remove ivy, small plants, and nandina ",
-        "imgUrl": "images/1695237567477.JPG",
+        "imgUrl": "images/1695237567477.jpeg",
         "xPt": "0.3385049365303244",
         "yPt": "0.23449015141364063"
     },
@@ -515,7 +515,7 @@
         "building": "8000",
         "type": "Removal",
         "summary": "Tripping hazard",
-        "imgUrl": "images/1695237618528.JPG",
+        "imgUrl": "images/1695237618528.jpeg",
         "xPt": "0.33568406205923834",
         "yPt": "0.2503579060205787"
     },
@@ -525,7 +525,7 @@
         "building": "8000",
         "type": "Removal",
         "summary": "Remove pinecones, twigs, and leaves around building. Pine straw to remain.",
-        "imgUrl": "images/1695237810624.JPG",
+        "imgUrl": "images/1695237810624.jpeg",
         "xPt": "0.3335684062059238",
         "yPt": "0.14986212684330416"
     },
@@ -535,7 +535,7 @@
         "building": "8000",
         "type": "Removal",
         "summary": "Remove tree stump",
-        "imgUrl": "images/1695237882657.JPG",
+        "imgUrl": "images/1695237882657.jpeg",
         "xPt": "0.3455571227080395",
         "yPt": "0.1674929652954576"
     },
@@ -545,7 +545,7 @@
         "building": "8000",
         "type": "Removal",
         "summary": "Remove messy looking plants (nandina?), ivy, and any weeds.",
-        "imgUrl": "images/1695238004021.JPG",
+        "imgUrl": "images/1695238004021.jpeg",
         "xPt": "0.31029619181946405",
         "yPt": "0.19922847450933376"
     } 
