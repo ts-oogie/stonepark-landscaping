@@ -618,5 +618,25 @@
         "imgUrl": "images/1695242092859.jpeg",
         "xPt": "0.40691114245416077",
         "yPt": "0.41961395516125166"
+    },
+    {
+        "id": "63",
+        "title": "Remove marked trees",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove pine trees marked for removal",
+        "imgUrl": "images/1695242685299.JPG",
+        "xPt": "0.39633286318758815",
+        "yPt": "0.40550928439952894"
+    },
+    {
+        "id": "64",
+        "title": "Trim nappy looking bushes",
+        "building": "1100",
+        "type": "Trim",
+        "summary": "Area looks unruly. Please civilize this mess.",
+        "imgUrl": "images/1695242798705.jpeg",
+        "xPt": "0.41678420310296194",
+        "yPt": "0.4090354520899596"
     }
 ]
