@@ -428,5 +428,125 @@
         "imgUrl": "images/1694576380208.jpg",
         "xPt": "0.34609375",
         "yPt": "0.484375"
-    }
+    },
+    {
+        "id": "44",
+        "title": "Remove Trees",
+        "building": "6000",
+        "type": "Removal",
+        "summary": "Remove trees as marked",
+        "imgUrl": "images/1695236488496.jpeg",
+        "xPt": "0.2306064880112835",
+        "yPt": "0.1146004499389973"
+    },
+    {
+        "id": "45",
+        "title": "Remove debris",
+        "building": "6000",
+        "type": "Removal",
+        "summary": "Pine cones, twigs, and leaves on lawn and underneath bushes",
+        "imgUrl": "images/1695236556241.jpeg",
+        "xPt": "0.23695345557122707",
+        "yPt": "0.12517895301028936"
+    },
+    {
+        "id": "46",
+        "title": "Remove Tree Stumps",
+        "building": "6000",
+        "type": "Removal",
+        "summary": "Remove Tree stumps as they are tripping hazard",
+        "imgUrl": "images/1695236792745.jpeg",
+        "xPt": "0.29689703808180534",
+        "yPt": "0.1674929652954576"
+    },
+    {
+        "id": "47",
+        "title": "Remove dead plants",
+        "building": "6000",
+        "type": "Removal",
+        "summary": "See photos",
+        "imgUrl": "images/1695236827836.jpeg",
+        "xPt": "0.2947813822284908",
+        "yPt": "0.18688688759282637"
+    },
+    {
+        "id": "48",
+        "title": "Remove Trees",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove marked trees",
+        "imgUrl": "images/1695236974576.JPG",
+        "xPt": "0.4619181946403385",
+        "yPt": "0.34203826597177656"
+    },
+    {
+        "id": "49",
+        "title": "Remove trees",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove marked trees",
+        "imgUrl": "images/1695237081552.JPG",
+        "xPt": "0.43582510578279265",
+        "yPt": "0.3843522782569448"
+    },
+    {
+        "id": "50",
+        "title": "Remove marked trees",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "Remove marked trees close to buildings 8000 and 1100",
+        "imgUrl": "images/1695237465816.JPG",
+        "xPt": "0.3526093088857546",
+        "yPt": "0.18688688759282637"
+    },
+    {
+        "id": "51",
+        "title": "Remove overgrown plants",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "Remove ivy, small plants, and nandina ",
+        "imgUrl": "images/1695237567477.JPG",
+        "xPt": "0.3385049365303244",
+        "yPt": "0.23449015141364063"
+    },
+    {
+        "id": "52",
+        "title": "Remove tree stump",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "Tripping hazard",
+        "imgUrl": "images/1695237618528.JPG",
+        "xPt": "0.33568406205923834",
+        "yPt": "0.2503579060205787"
+    },
+    {
+        "id": "53",
+        "title": "Remove debris around building",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "Remove pinecones, twigs, and leaves around building. Pine straw to remain.",
+        "imgUrl": "images/1695237810624.JPG",
+        "xPt": "0.3335684062059238",
+        "yPt": "0.14986212684330416"
+    },
+    {
+        "id": "54",
+        "title": "Remove stump",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "Remove tree stump",
+        "imgUrl": "images/1695237882657.JPG",
+        "xPt": "0.3455571227080395",
+        "yPt": "0.1674929652954576"
+    },
+    {
+        "id": "55",
+        "title": "Remove plants, shrub, vines",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "Remove messy looking plants (nandina?), ivy, and any weeds.",
+        "imgUrl": "images/1695238004021.JPG",
+        "xPt": "0.31029619181946405",
+        "yPt": "0.19922847450933376"
+    } 
 ]
