@@ -90,6 +90,9 @@ $(document).ready(function(e) {
           else if(data.type == "Removal"){
             thisClass = 'task-removal'
           }
+          else if(data.type == "Trim"){
+            thisClass = 'task-trim'
+          }
           else if(data.type == "Design"){
             thisClass = 'task-design'
           } 

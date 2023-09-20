@@ -223,7 +223,7 @@
         "id": "23",
         "title": "Bush clearance",
         "building": "Tennis Court",
-        "type": "Removal",
+        "type": "Trim",
         "summary": "Bushes should be clear from fence.",
         "imgUrl": "images/1694408965717.jpg",
         "xPt": "0.51171875",
@@ -303,7 +303,7 @@
         "id": "31",
         "title": "Align hedges",
         "building": "7000",
-        "type": "Removal",
+        "type": "Trim",
         "summary": "This applies to all sides of building.",
         "imgUrl": "images/1694487808925.jpg",
         "xPt": "0.28671875",
@@ -383,7 +383,7 @@
         "id": "39",
         "title": "Trim bushes - Remove debris",
         "building": "9000",
-        "type": "Removal",
+        "type": "Trim",
         "summary": "Remove debris (pine cones, leaves, twigs) and trim bushes.",
         "imgUrl": "images/1694546404056.jpg",
         "xPt": "0.32265625",
@@ -423,7 +423,7 @@
         "id": "43",
         "title": "Trim bushes - Remove debris",
         "building": "9000",
-        "type": "Removal",
+        "type": "Trim",
         "summary": "Deficient landscaping work. Trim and remove debris around entire building.",
         "imgUrl": "images/1694576380208.jpg",
         "xPt": "0.34609375",
@@ -548,5 +548,55 @@
         "imgUrl": "images/1695238004021.jpeg",
         "xPt": "0.31029619181946405",
         "yPt": "0.19922847450933376"
-    } 
+    },
+    {
+        "id": "56",
+        "title": "Trim plants on wall",
+        "building": "8000",
+        "type": "Trim",
+        "summary": "Clean up and trim plants, vines growing on retaining wall. ",
+        "imgUrl": "images/1695239291266.jpeg",
+        "xPt": "0.3511988716502116",
+        "yPt": "0.14633595915287348"
+    },
+    {
+        "id": "57",
+        "title": "Trim and clean up",
+        "building": "1100",
+        "type": "Trim",
+        "summary": "Trim overgrown plants and vines on retaining wall. Remove any fallen branches.",
+        "imgUrl": "images/1695239945684.jpeg",
+        "xPt": "0.3723554301833568",
+        "yPt": "0.17807146836674964"
+    },
+    {
+        "id": "58",
+        "title": "Trim plants off wall",
+        "building": "1100",
+        "type": "Trim",
+        "summary": "Trim plants and vines growing on retaining wall",
+        "imgUrl": "images/1695240157993.jpeg",
+        "xPt": "0.40409026798307474",
+        "yPt": "0.23096398372320995"
+    },
+    {
+        "id": "59",
+        "title": "Remove debris around building",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove pine cones, twigs, and leaves on lawn and underneath bushes. Pine straw to remain.",
+        "imgUrl": "images/1695240307981.jpeg",
+        "xPt": "0.3533145275035261",
+        "yPt": "0.22214856449713324"
+    },
+    {
+        "id": "60",
+        "title": "Remove stump",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove stumps around building 1100",
+        "imgUrl": "images/1695240390996.jpeg",
+        "xPt": "0.3511988716502116",
+        "yPt": "0.2715149121631628"
+    }
 ]
