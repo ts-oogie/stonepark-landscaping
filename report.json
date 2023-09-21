@@ -341,10 +341,10 @@
     },
     {
         "id": "35",
-        "title": "Remove bushes",
+        "title": "Trim tall bushes",
         "building": "Tennis Courts",
-        "type": "Removal",
-        "summary": "Remove bushes behind trees. Trees in front to remain.",
+        "type": "Trim",
+        "summary": "Trim bushes behind trees to provide a clear view of court. Trees in front to remain.",
         "imgUrl": "images/1694493496895.png",
         "xPt": "0.5513888888888889",
         "yPt": "0.4027777777777778"
