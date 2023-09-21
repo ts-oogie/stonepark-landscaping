@@ -748,5 +748,35 @@
         "imgUrl": "images/1695264457106.jpeg",
         "xPt": "0.3734375",
         "yPt": "0.310546875"
+    },
+    {
+        "id": "76",
+        "title": "Remove Bushes shrubs plants",
+        "building": "8000",
+        "type": "Removal",
+        "summary": "See photo. Remove as shown.",
+        "imgUrl": "images/1695268843150.jpeg",
+        "xPt": "0.31796875",
+        "yPt": "0.2265625"
+    },
+    {
+        "id": "77",
+        "title": "Trim tall bushes",
+        "building": "Tennis Courts",
+        "type": "Trim",
+        "summary": "Trim tall bushes so that tennis courts can be seen from road.",
+        "imgUrl": "images/1695329885161.jpg",
+        "xPt": "0.5",
+        "yPt": "0.3755368590308681"
+    },
+    {
+        "id": "78",
+        "title": "New brown mulch",
+        "building": "Tennis Courts",
+        "type": "Design",
+        "summary": "Install new brown colored mulch around all bushes surrounding Tennis Court.",
+        "imgUrl": "images/1695330085522.jpg",
+        "xPt": "0.498589562764457",
+        "yPt": "0.3931676974830215"
     }
 ]
