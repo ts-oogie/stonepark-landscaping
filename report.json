@@ -634,9 +634,119 @@
         "title": "Trim nappy looking bushes",
         "building": "1100",
         "type": "Trim",
-        "summary": "Area looks unruly. Please civilize this mess.",
+        "summary": "Remove nandina and other plants interwined with bushes.",
         "imgUrl": "images/1695242798705.jpeg",
         "xPt": "0.41678420310296194",
         "yPt": "0.4090354520899596"
+    },
+    {
+        "id": "65",
+        "title": "Remove Pine Trees",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove trees within close proximity to 1100",
+        "imgUrl": "images/1695260946139.jpeg",
+        "xPt": "0.4484375",
+        "yPt": "0.376953125"
+    },
+    {
+        "id": "66",
+        "title": "Trim bushes - Remove debris",
+        "building": "1100",
+        "type": "Trim",
+        "summary": " Trim bushes, make below lower window sill. Clear from building",
+        "imgUrl": "images/1695261146354.jpeg",
+        "xPt": "0.4515625",
+        "yPt": "0.2734375"
+    },
+    {
+        "id": "67",
+        "title": "Remove debris ",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove debris like pine cones, twigs, and leaves on lawn and underneath bushes. pine straw to remain.",
+        "imgUrl": "images/1695261337398.jpeg",
+        "xPt": "0.38671875",
+        "yPt": "0.32421875"
+    },
+    {
+        "id": "68",
+        "title": "Remove plants",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove mangled plants up adjacent to building.",
+        "imgUrl": "images/1695261647490.jpeg",
+        "xPt": "0.41328125",
+        "yPt": "0.244140625"
+    },
+    {
+        "id": "69",
+        "title": "Remove straggly bushes",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove bushes that appear to be straggly in appearance",
+        "imgUrl": "images/1695262003150.jpeg",
+        "xPt": "0.425",
+        "yPt": "0.36328125"
+    },
+    {
+        "id": "70",
+        "title": "Remove unattractive plants",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove unappealing plants",
+        "imgUrl": "images/1695262143330.jpeg",
+        "xPt": "0.39921875",
+        "yPt": "0.333984375"
+    },
+    {
+        "id": "71",
+        "title": "Remove nuissance plants",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Around entire building remove plants (esp Nandina) growing inside and underneath bushes. ",
+        "imgUrl": "images/1695262370127.jpeg",
+        "xPt": "0.42421875",
+        "yPt": "0.259765625"
+    },
+    {
+        "id": "72",
+        "title": "Remove pine tree",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove marked pine tree. Its too close to building",
+        "imgUrl": "images/1695262491043.jpeg",
+        "xPt": "0.3921875",
+        "yPt": "0.23046875"
+    },
+    {
+        "id": "73",
+        "title": "Remove bush and plants",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove marked bushes and random plants",
+        "imgUrl": "images/1695263814582.jpeg",
+        "xPt": "0.40703125",
+        "yPt": "0.3515625"
+    },
+    {
+        "id": "74",
+        "title": "Remove random plants",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "remove as shown",
+        "imgUrl": "images/1695263915075.jpeg",
+        "xPt": "0.390625",
+        "yPt": "0.35546875"
+    },
+    {
+        "id": "75",
+        "title": "Remove small plants",
+        "building": "1100",
+        "type": "Removal",
+        "summary": "Remove small plants, vines, and vines growing underneath bushes",
+        "imgUrl": "images/1695264457106.jpeg",
+        "xPt": "0.3734375",
+        "yPt": "0.310546875"
     }
 ]
