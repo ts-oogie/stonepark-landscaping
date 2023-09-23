@@ -3,6 +3,7 @@ const app = express();
 const fs = require('fs'); 
 const path = require('path');
 const cors = require('cors'); 
+const sharp = require('sharp')
 
 const multer = require('multer');
 const storage = multer.diskStorage({
@@ -64,8 +65,7 @@ app.get('/json', (req, res)=>{
 //Sept 7, 2023 : post historyArr
 app.post('/history', urlencodedParser, (req, res)=>{ 
     console.log("JSON received")
-    console.log(req.body); 
-    
+    console.log(req.body);  
     //var obj = Object.keys(req.body)[0];
     //console.log(JSON.parse(JSON.stringify(obj))); 
 }); 
@@ -78,6 +78,10 @@ app.post('/upload', upload.any(), (req, res)=>{
     
     let formData = req.body
     let imgPath = req.files[0].path 
+
+    console.log("imgPath " + imgPath)
+
+    //sharp()
 
     let thisObj = {
         id: "",

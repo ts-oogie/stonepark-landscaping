@@ -778,5 +778,15 @@
         "imgUrl": "images/1695330085522.jpg",
         "xPt": "0.498589562764457",
         "yPt": "0.3931676974830215"
+    },
+    {
+        "id": "79",
+        "title": "New bench and mulch",
+        "building": "Tennis Court",
+        "type": "Design",
+        "summary": "New bench and mulch in front of existing bushes and trees.",
+        "imgUrl": "images/1695421051815.png",
+        "xPt": "0.5458392101551481",
+        "yPt": "0.421377039006467"
     }
 ]
