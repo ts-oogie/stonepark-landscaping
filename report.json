@@ -958,5 +958,25 @@
         "imgUrl": "images/1695445096786.jpeg",
         "xPt": "0.1530324400564175",
         "yPt": "0.32440742751962315"
+    },
+    {
+        "id": "97",
+        "title": "Exposed tree roots",
+        "building": "7000",
+        "type": "Soil",
+        "summary": "See photo. Roots exposes are tripping hazard.",
+        "imgUrl": "images/1695448258894.jpeg",
+        "xPt": "0.29055007052186177",
+        "yPt": "0.3896415297925908"
+    },
+    {
+        "id": "98",
+        "title": "Exposed Tree Roots",
+        "building": "1100",
+        "type": "Soil",
+        "summary": "Exposed roots near 1100",
+        "imgUrl": "images/1695448609064.jpeg",
+        "xPt": "0.3942172073342736",
+        "yPt": "0.48132188974378864"
     }
 ]

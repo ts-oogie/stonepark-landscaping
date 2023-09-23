@@ -82,10 +82,6 @@ async function mail(title, building, type, summary, img){
             filename: 'attachment.jpeg',
             path: './' + img,
             cid: 'img@beautifystonepark'
-        },{
-            filename: 'header.jpeg',
-            path: './images/stonepark-BG.jpg',
-            cid: 'header@beautifystonepark'
         } 
         ]
 
