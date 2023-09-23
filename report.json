@@ -800,7 +800,7 @@
         "yPt": "0.4178508713160363"
     },
     {
-        "id": "81", 
+        "id": "81",
         "title": "Remove debris",
         "building": "5000",
         "type": "Removal",
@@ -808,5 +808,145 @@
         "imgUrl": "images/1695430767991.jpeg",
         "xPt": "0.15585331452750353",
         "yPt": "0.24859482217536338"
+    },
+    {
+        "id": "82",
+        "title": "Remove stump",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Remove",
+        "imgUrl": "images/1695438087914.jpeg",
+        "xPt": "0.21156558533145275",
+        "yPt": "0.36143218826914536"
+    },
+    {
+        "id": "83",
+        "title": "Remove debris",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Remove debris such as pine cones, twigs, and leaves from lawn and under bushes. Pine straw to remain",
+        "imgUrl": "images/1695438283184.jpeg",
+        "xPt": "0.21368124118476728",
+        "yPt": "0.2768041636988089"
+    },
+    {
+        "id": "84",
+        "title": "Trim vines and plants",
+        "building": "5000",
+        "type": "Trim",
+        "summary": "Trim plants and vines growing on retaining wall",
+        "imgUrl": "images/1695438419732.jpeg",
+        "xPt": "0.18053596614950634",
+        "yPt": "0.3579060205787146"
+    },
+    {
+        "id": "85",
+        "title": "Remove straggly bushes",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Remove bushes that are straggly in appearance.",
+        "imgUrl": "images/1695438532332.jpeg",
+        "xPt": "0.1530324400564175",
+        "yPt": "0.27856724754402423"
+    },
+    {
+        "id": "86",
+        "title": "Remove debris",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Remove debris like pine cones, twigs, and leaves around entire building",
+        "imgUrl": "images/1695438647348.jpeg",
+        "xPt": "0.16572637517630465",
+        "yPt": "0.23449015141364063"
+    },
+    {
+        "id": "87",
+        "title": "Trim unruly bushes",
+        "building": "5000",
+        "type": "Trim",
+        "summary": "Bushes in front are in need of trimming. Current landscaping work is deficient",
+        "imgUrl": "images/1695439167160.jpeg",
+        "xPt": "0.17842031029619182",
+        "yPt": "0.2503579060205787"
+    },
+    {
+        "id": "88",
+        "title": "Remove marked trees",
+        "building": "4000",
+        "type": "Removal",
+        "summary": "Remove marked trees",
+        "imgUrl": "images/1695439305396.jpeg",
+        "xPt": "0.18688293370944992",
+        "yPt": "0.38611536210216013"
+    },
+    {
+        "id": "89",
+        "title": "Remove stumps",
+        "building": "4000",
+        "type": "Removal",
+        "summary": "Remove all stumps around building",
+        "imgUrl": "images/1695439418808.jpeg",
+        "xPt": "0.17277856135401976",
+        "yPt": "0.4442971289942665"
+    },
+    {
+        "id": "90",
+        "title": "Remove stumps",
+        "building": "4000",
+        "type": "Removal",
+        "summary": "Remove stumps around building 4000",
+        "imgUrl": "images/1695439513964.jpeg",
+        "xPt": "0.1755994358251058",
+        "yPt": "0.5183466504933109"
+    },
+    {
+        "id": "91",
+        "title": "Remove marked trees",
+        "building": "4000",
+        "type": "Removal",
+        "summary": "Remove trees on retaining wall marked for removal",
+        "imgUrl": "images/1695439635649.jpeg",
+        "xPt": "0.11142454160789844",
+        "yPt": "0.4848480574342193"
+    },
+    {
+        "id": "92",
+        "title": "Remove trees",
+        "building": "4000",
+        "type": "Removal",
+        "summary": "Remove trees within close proximity to building",
+        "imgUrl": "images/1695440474248.jpeg",
+        "xPt": "0.12411847672778561",
+        "yPt": "0.5112943151124495"
+    },
+    {
+        "id": "93",
+        "title": "Remove trees",
+        "building": "4000",
+        "type": "Removal",
+        "summary": "Remove marked trees on retaining wall",
+        "imgUrl": "images/1695440567240.jpeg",
+        "xPt": "0.1325811001410437",
+        "yPt": "0.35966910442393"
+    },
+    {
+        "id": "94",
+        "title": "Remove trees",
+        "building": "4000",
+        "type": "Removal",
+        "summary": "Remove marked trees on retaining wall",
+        "imgUrl": "images/1695440643628.jpeg",
+        "xPt": "0.1234132581100141",
+        "yPt": "0.4090354520899596"
+    },
+    {
+        "id": "95",
+        "title": "Trim overgrown plants",
+        "building": "1100",
+        "type": "Trim",
+        "summary": "Trim overgrown bushes in front as shown.",
+        "imgUrl": "images/1695441002604.jpeg",
+        "xPt": "0.4330042313117066",
+        "yPt": "0.35966910442393"
     }
 ]
