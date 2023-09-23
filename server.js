@@ -28,11 +28,6 @@ const urlencodedParser = bodyParser.urlencoded({
 });  
 
 
-const html = `
-    <h1>Testing</h1>
-    <p>123</p>
-`
-
 
 app.use(bodyParser.json())
  
@@ -56,34 +51,42 @@ app.all('*', function(req, res, next) {
     next();
 });   
 
-async function mail(){
+async function mail(title, building, type, summary, img){
+
+    const html = `
+    <h2>${title}</h2>
+    <p>Building : ${building}</p>
+    <p>Type : ${type}</p>
+    <p>Summary : ${summary}</p>
+    <img src="cid:img@beautifystonepark" width="300">
+`  
+
     const trans = nodeMailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
         secure: true,
         auth: {
-            user: 'onagususa@gmail.com',
-            pass: 'Sugi22@@22@@'
+            user: 'beautifystonepark@gmail.com',
+            pass: 'eefj yxyn yshn prva' //google app password
         }
     })
 
     const data = await trans.sendMail({
-        from: 'Gregory <onagususa@gmail.com>',
+        from: 'Beautify Stonepark<onagususa@gmail.com>',
         to: 'onagususa@gmail.com',
-        subject: 'Testes',
+        subject: 'A new item was added to Stonepark Beautification',
         html: html,
-        
+        attachments: [{
+            filename: 'attachment.jpeg',
+            path: './' + img,
+            cid: 'img@beautifystonepark'
+        }]
+
     })
+ 
 }
 
-app.get('/' , function(req, res ){ 
-
-   
-    mail()
-        .catch(e => console.log(e))
-
-
-   
+app.get('/' , function(req, res ){  
         res.sendFile(__dirname + '/home.html');
 });
 
@@ -166,6 +169,9 @@ app.post('/upload', upload.any(), (req, res)=>{
         if (err) throw err;
         console.log('Saved!');
     });  
+    
+    //Nodemail to email address
+    mail(thisObj.title, thisObj.building, thisObj.type, thisObj.summary, thisObj.imgUrl)
 
     res.sendFile(__dirname + '/submitted.html') 
 
