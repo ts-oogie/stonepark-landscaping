@@ -53,9 +53,8 @@ app.all('*', function(req, res, next) {
 
 async function mail(title, building, type, summary, img){
 
-    const html = ` 
-        <img src="cid:header@beautifystonepark" width="300">  
-        <h2>${title}</h2>
+    const html = `  
+        <h2>Title : ${title}</h2>
         <h3>Building : ${building}</h3>
         <h3>Type : ${type}</h3>
         <h3>Summary : ${summary}</h3>
