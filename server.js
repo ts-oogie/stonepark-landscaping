@@ -58,7 +58,7 @@ async function mail(title, building, type, summary, img){
         <h3>Building : ${building}</h3>
         <h3>Type : ${type}</h3>
         <h3>Summary : ${summary}</h3>
-        <img src="cid:img@beautifystonepark" width="300">  
+        <img src="cid:img@beautifystonepark" width="800">  
         <h3>Thank you for your participation!</h3>  
     `  
     const emailList = ['onagususa@gmail.com' , 'coachkenwoods@yahoo.com ', 'adamjngo@gmail.com']
@@ -161,15 +161,11 @@ app.post('/upload', upload.any(), (req, res)=>{
     thisObj.yPt = formData.yPt
     console.log(thisObj)
 
-    const report = require('./report.json');
-
-    console.log(report) 
+    const report = require('./report.json'); 
 
     report.push(thisObj)
     
-    let jsonString = JSON.stringify(report) 
-
-    console.log(jsonString) 
+    let jsonString = JSON.stringify(report)  
      
     fs.writeFile('report.json', jsonString , function (err) {
         if (err) throw err;
