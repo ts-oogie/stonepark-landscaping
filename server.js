@@ -79,9 +79,10 @@ app.post('/upload', upload.any(), (req, res)=>{
     let formData = req.body
     let imgPath = req.files[0].path 
 
-    console.log("imgPath " + imgPath)
+     
 
-    //sharp()
+    //9-22-23
+    sharp(req.files[0].path).resize(800, null).toFile(imgPath)
 
     let thisObj = {
         id: "",

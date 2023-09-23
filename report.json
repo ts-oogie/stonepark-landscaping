@@ -788,5 +788,25 @@
         "imgUrl": "images/1695421051815.png",
         "xPt": "0.5458392101551481",
         "yPt": "0.421377039006467"
+    },
+    {
+        "id": "80",
+        "title": "Remove Pine tree",
+        "building": "4000",
+        "type": "Removal",
+        "summary": "Remove tree",
+        "imgUrl": "images/1695430601588.jpeg",
+        "xPt": "0.18124118476727785",
+        "yPt": "0.4178508713160363"
+    },
+    {
+        "id": "81", 
+        "title": "Remove debris",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Remove pine cones, twigs, and leaves around entire building. Pine straw to remain",
+        "imgUrl": "images/1695430767991.jpeg",
+        "xPt": "0.15585331452750353",
+        "yPt": "0.24859482217536338"
     }
 ]
