@@ -54,11 +54,13 @@ app.all('*', function(req, res, next) {
 async function mail(title, building, type, summary, img){
 
     const html = ` 
+        <img src="cid:header@beautifystonepark" width="300">  
         <h2>${title}</h2>
         <h3>Building : ${building}</h3>
         <h3>Type : ${type}</h3>
         <h3>Summary : ${summary}</h3>
         <img src="cid:img@beautifystonepark" width="300">  
+        <h3>Thank you for your participation!</h3>  
     `  
     const email = ['onagususa@gmail.com' , 'coachkenwoods@yahoo.com ', 'adamjngo@gmail.com']
 
@@ -81,7 +83,12 @@ async function mail(title, building, type, summary, img){
             filename: 'attachment.jpeg',
             path: './' + img,
             cid: 'img@beautifystonepark'
-        }]
+        },{
+            filename: 'header.jpeg',
+            path: './images/stonepark-BG.jpg',
+            cid: 'header@beautifystonepark'
+        } 
+        ]
 
     })
  
