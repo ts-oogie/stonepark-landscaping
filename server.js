@@ -3,7 +3,7 @@ const app = express();
 const fs = require('fs'); 
 const path = require('path');
 const cors = require('cors'); 
-const sharp = require('sharp')
+const nodeMailer = require('nodemailer')
 
 const multer = require('multer');
 const storage = multer.diskStorage({
@@ -27,6 +27,13 @@ const urlencodedParser = bodyParser.urlencoded({
     extended : false
 });  
 
+
+const html = `
+    <h1>Testing</h1>
+    <p>123</p>
+`
+
+
 app.use(bodyParser.json())
  
 app.use(cors()); 
@@ -49,8 +56,35 @@ app.all('*', function(req, res, next) {
     next();
 });   
 
+async function mail(){
+    const trans = nodeMailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: {
+            user: 'onagususa@gmail.com',
+            pass: 'Sugi22@@22@@'
+        }
+    })
+
+    const data = await trans.sendMail({
+        from: 'Gregory <onagususa@gmail.com>',
+        to: 'onagususa@gmail.com',
+        subject: 'Testes',
+        html: html,
+        
+    })
+}
+
 app.get('/' , function(req, res ){ 
-    res.sendFile(__dirname + '/home.html');
+
+   
+    mail()
+        .catch(e => console.log(e))
+
+
+   
+        res.sendFile(__dirname + '/home.html');
 });
 
 app.get('/updates/:id', (req, res)=>{
