@@ -948,5 +948,15 @@
         "imgUrl": "images/1695441002604.jpeg",
         "xPt": "0.4330042313117066",
         "yPt": "0.35966910442393"
+    },
+    {
+        "id": "96",
+        "title": "Remove debris",
+        "building": "5000",
+        "type": "Removal",
+        "summary": "Remove Debris like pine cones and twigs from lawn and under bushes around entire building",
+        "imgUrl": "images/1695445096786.jpeg",
+        "xPt": "0.1530324400564175",
+        "yPt": "0.32440742751962315"
     }
 ]

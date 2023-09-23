@@ -54,12 +54,14 @@ app.all('*', function(req, res, next) {
 async function mail(title, building, type, summary, img){
 
     const html = `
-    <h2>${title}</h2>
-    <p>Building : ${building}</p>
-    <p>Type : ${type}</p>
-    <p>Summary : ${summary}</p>
-    <img src="cid:img@beautifystonepark" width="300">
-`  
+        <img src="./images/stonepark-BG.jpg" width="300">  
+        <h2>${title}</h2>
+        <h3>Building : ${building}</h3>
+        <h3>Type : ${type}</h3>
+        <h3>Summary : ${summary}</h3>
+        <img src="cid:img@beautifystonepark" width="300">  
+    `  
+    const email = ['onagususa@gmail.com' , 'coachkenwoods@yahoo.com ', 'adamjngo@gmail.com']
 
     const trans = nodeMailer.createTransport({
         host: 'smtp.gmail.com',
