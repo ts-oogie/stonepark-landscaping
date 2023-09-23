@@ -978,5 +978,15 @@
         "imgUrl": "images/1695448609064.jpeg",
         "xPt": "0.3942172073342736",
         "yPt": "0.48132188974378864"
+    },
+    {
+        "id": "99",
+        "title": "Sinkhole",
+        "building": "1300",
+        "type": "Soil",
+        "summary": "A sinkhole in front of 1300 due to erosion is a safety hazard.",
+        "imgUrl": "images/1695448875948.jpeg",
+        "xPt": "0.576163610719323",
+        "yPt": "0.5324513212550336"
     }
 ]
