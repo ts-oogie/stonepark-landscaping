@@ -61,7 +61,7 @@ async function mail(title, building, type, summary, img){
         <img src="cid:img@beautifystonepark" width="300">  
         <h3>Thank you for your participation!</h3>  
     `  
-    const email = ['onagususa@gmail.com' , 'coachkenwoods@yahoo.com ', 'adamjngo@gmail.com']
+    const emailList = ['onagususa@gmail.com' , 'coachkenwoods@yahoo.com ', 'adamjngo@gmail.com']
 
     const trans = nodeMailer.createTransport({
         host: 'smtp.gmail.com',
@@ -75,7 +75,7 @@ async function mail(title, building, type, summary, img){
 
     const data = await trans.sendMail({
         from: 'Beautify Stonepark<onagususa@gmail.com>',
-        to: 'onagususa@gmail.com',
+        to: emailList,
         subject: 'A new item was added to Stonepark Beautification',
         html: html,
         attachments: [{
@@ -154,7 +154,10 @@ app.post('/upload', upload.any(), (req, res)=>{
     }
     if (formData.trim){
         thisObj.type = "Trim"
-    }   
+    }  
+    if (formData.soil){
+        thisObj.type = "Soil"
+    } 
 
     thisObj.summary = formData.summary
     thisObj.imgUrl = imgPath

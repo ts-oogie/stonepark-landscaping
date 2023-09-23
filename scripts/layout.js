@@ -96,6 +96,9 @@ $(document).ready(function(e) {
           else if(data.type == "Design"){
             thisClass = 'task-design'
           } 
+          else if(data.type == "Soil"){
+            thisClass = 'task-soil'
+          }  
 
           id++
           projectArr.push(data)  

@@ -121,6 +121,15 @@ i {
     z-index: 100;
 }
 
+.task-soil {
+    position: absolute;
+    border: yellow solid 4px;
+    border-radius: 2px;
+    height: 6px;
+    width: 6px; 
+    z-index: 100;
+}
+
 .task-other {
     position: absolute;
     border: grey solid 4px;
