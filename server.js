@@ -61,7 +61,7 @@ async function mail(title, building, type, summary, img){
         <img src="cid:img@beautifystonepark" width="800">  
         <h3>Thank you for your participation!</h3>  
     `  
-    const emailList = ['onagususa@gmail.com' , 'coachkenwoods@yahoo.com ', 'adamjngo@gmail.com']
+    const emailList = ['onagususa@gmail.com' , 'coachkenwoods@yahoo.com ']
 
     const trans = nodeMailer.createTransport({
         host: 'smtp.gmail.com',

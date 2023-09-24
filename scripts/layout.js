@@ -18,15 +18,15 @@ $(document).ready(function(e) {
   let grassChecked = false
   let shadeChecked = false
 
-  const today = new Date();
-  let yyyy = today.getFullYear();
-  let mm = today.getMonth() + 1; // Months start at 0!
-  let dd = today.getDate();
+  const today = new Date()
+  let yyyy = today.getFullYear()
+  let mm = today.getMonth() + 1 // Months start at 0!
+  let dd = today.getDate()
 
-  if (dd < 10) dd = '0' + dd;
-  if (mm < 10) mm = '0' + mm;
+  if (dd < 10) dd = '0' + dd
+  if (mm < 10) mm = '0' + mm
 
-  let formattedToday = dd + '/' + mm + '/' + yyyy; 
+  let formattedToday = dd + '/' + mm + '/' + yyyy
   let time = today.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true}) 
 
   //printing out json
@@ -40,7 +40,7 @@ $(document).ready(function(e) {
 
   //Sept 7, 2023 : post 
  
-  setTimeout(()=>{
+  setTimeout(() => {
     
     let calibrationX = 8
     let calibrationY = 8
@@ -63,21 +63,20 @@ $(document).ready(function(e) {
 
       $('#overlaycontainer').css('width', '85%')
       $('#overlay-app').empty()
-      $('#overlaycontainer').css('visibility', 'hidden' );
+      $('#overlaycontainer').css('visibility', 'hidden' )
 
       $('#overlaycontainer2').css('width', '85%')
       $('#overlay-form').empty()
-      $('#overlaycontainer2').css('visibility', 'hidden' );
+      $('#overlaycontainer2').css('visibility', 'hidden' )
 
       setTimeout(()=>{ 
-        window.location.replace(url + '#/'); 
+        window.location.replace(url + '#/')
       }, 100) 
 
     } 
     else {
-      console.info( "This page is not reloaded");
-    } 
- 
+      console.info( "This page is not reloaded")
+    }  
    
     $.getJSON("/json", (result)=>{ 
       
@@ -109,17 +108,17 @@ $(document).ready(function(e) {
     })   
 
     $('#overlaycontainer').on('click',  function(e){  
-      $('#overlaycontainer').css('width', '85%')
-      $('#overlay-app').empty()
-      $('#overlaycontainer').css('visibility', 'hidden' ); 
-      $('#overlaycontainer').scrollTop(0)
-      screenLocked = false
-      window.location.replace(url + '#/');  
+        $('#overlaycontainer').css('width', '85%')
+        $('#overlay-app').empty()
+        $('#overlaycontainer').css('visibility', 'hidden' )
+        $('#overlaycontainer').scrollTop(0)
+        screenLocked = false
+        window.location.replace(url + '#/')
     });
 
     $("#home").on('click', (e)=>{
 
-    clearBoxes();
+    clearBoxes()
 
     screenLocked = false 
     window.location.reload();
@@ -131,7 +130,7 @@ $(document).ready(function(e) {
     //On click, selects id of target element selected
     $(document).on('click', 'a.task-point-a', (e)=>{ 
  
-    $('#overlaycontainer').css('visibility', 'visible' );
+    $('#overlaycontainer').css('visibility', 'visible' )
       
     $('#overlay-app').html(  
         '<div class="overlayBG">' + 
@@ -155,14 +154,14 @@ $(document).ready(function(e) {
         
         $('#overlaycontainer2').css('width', '500px')
         $('#overlay-form').empty()
-        $('#overlaycontainer2').css('visibility', 'hidden' ); 
+        $('#overlaycontainer2').css('visibility', 'hidden' )
         
         $('#overlaycontainer').css('width', '85%')
         $('#overlay-app').empty()
-        $('#overlaycontainer').css('visibility', 'hidden' );
+        $('#overlaycontainer').css('visibility', 'hidden' )
         document.getElementById(thisStr).remove()
         screenLocked = false
-        window.location.replace(url + '#/');  
+        window.location.replace(url + '#/')
 
     }) 
 
@@ -189,21 +188,25 @@ $(document).ready(function(e) {
 
     $(document).on('click', '#shade', (e)=>{
 
-      shadeChecked = !shadeChecked
-      $('#shade').prop('checked', shadeChecked)
-      
-      if(grassChecked == true && shadeChecked == false){ 
-        $('#img-header').attr('src', 'images/Leeches-Header-3-Large.jpg') 
-      }
-      else if(grassChecked == true && shadeChecked == true){
-        $('#img-header').attr('src', 'images/Leeches-Header-4-Large.jpg') 
-      } 
-      else if(grassChecked == false && shadeChecked == true){
-        $('#img-header').attr('src', 'images/Leeches-Header-2-Large.jpg')  
-      }
-      else{
-        $('#img-header').attr('src', 'images/Leeches-Header-5-Large.jpg')  
-      }
+        shadeChecked = !shadeChecked
+
+        $('#shade').prop('checked', shadeChecked)
+        
+        if(grassChecked == true && shadeChecked == false){ 
+          $('#img-header').attr('src', 'images/Leeches-Header-3-Large.jpg') 
+        }
+
+        else if(grassChecked == true && shadeChecked == true){
+          $('#img-header').attr('src', 'images/Leeches-Header-4-Large.jpg') 
+        } 
+
+        else if(grassChecked == false && shadeChecked == true){
+          $('#img-header').attr('src', 'images/Leeches-Header-2-Large.jpg')  
+        }
+
+        else{
+          $('#img-header').attr('src', 'images/Leeches-Header-5-Large.jpg')  
+        }
 
   })
 
@@ -228,11 +231,9 @@ $(document).ready(function(e) {
                           '<p>Volunteer : Gregory</p>' + 
                           '<p>Volunteer : Melissa</p>' +  
                 '</div>'  
-      );
+      )
 
-    })
-
-  
+    })  
 
     $(document).on('click', 'input.contact-radio-text', (e)=>{
       
@@ -265,7 +266,7 @@ $(document).ready(function(e) {
         
         newUrl = ''
         newUrl = url + '#/add' 
-        window.location.replace(newUrl);  
+        window.location.replace(newUrl)
 
         winWidth
     
@@ -304,60 +305,61 @@ $(document).ready(function(e) {
 //Sets and resets variables when window is resized and scrolled
 function setVars() {
   //Window Scroll top location
-   windowTop = $(window).scrollTop();
+   windowTop = $(window).scrollTop()
 
    //Window width
-   windowWidth = $(window).width();
+   windowWidth = $(window).width()
 
    //Height of the img header in pixels
-   windowRatio = (windowWidth / 3.25) + 9;
+   windowRatio = (windowWidth / 3.25) + 9
 
    //Height of the img header plus offset adjustment for spacing discrepancy in the nav bar
-   windowRatioPlus = (windowWidth / 3.25) + 15;
+   windowRatioPlus = (windowWidth / 3.25) + 15
 
    //Height of the small img header 
-   windowSmallRatio = (windowWidth / 3.25);
+   windowSmallRatio = (windowWidth / 3.25)
 
    //Location of the top of the nav bar relative to the img header
-   navMargin = windowWidth / 10.5; 
+   navMargin = windowWidth / 10.5
 
    //Neg value of the above
-   negMargin = navMargin * -1;
+   negMargin = navMargin * -1
 
 
    //Img header minus height of the nav bar location
-   numToNeg = ((windowRatio * -1) - navMargin) + 6;
-   numToNegSmall = (windowSmallRatio * -1) - 53;
-   winSmallNeg = ((windowSmallRatio * -1) + navMargin) + 20;
+   numToNeg = ((windowRatio * -1) - navMargin) + 6
+   numToNegSmall = (windowSmallRatio * -1) - 53
+   winSmallNeg = ((windowSmallRatio * -1) + navMargin) + 20
 }
-setVars(); 
+
+setVars()
 
 function adjustNav() { 
   if ((windowWidth <= 550) && (windowTop <= windowRatio)) {
-      $('#app').css({"margin-top" : "20px"});
+      $('#app').css({"margin-top" : "20px"})
   }
 }
 
 //The background imagerfader
 function imageSlide() {
-  let slides = [];
+  let slides = []
   //Make sure that the IMG SRC height is set to headheight
   //$('#img-header').css("height" : headHeight);
-  $('.header-container').css({"height" : headHeight});
+  $('.header-container').css({"height" : headHeight})
   //Grab all the img elements with the id of image-loader
-  slides = $('#image-loader img');
+  slides = $('#image-loader img')
   //Get the number of elements pulled and save as variable
-  var slideCount = slides.length; 
+  var slideCount = slides.length 
   //Create an empty array container
-  var slideSrc = []; 
+  var slideSrc = []
   
 } 
 
 function clearBoxes(){
-const boxes = document.querySelectorAll('.task-point'); 
+const boxes = document.querySelectorAll('.task-point')
   boxes.forEach(box => {
-    box.remove();
-  }); 
+    box.remove()
+  })
 } 
 
  
