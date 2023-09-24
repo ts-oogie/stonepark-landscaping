@@ -1206,6 +1206,7 @@ li#amazonUK {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+
     html {
       transform: rotate(-90deg);
       transform-origin: left top;
@@ -1216,17 +1217,18 @@ li#amazonUK {
       top: 100%;
       left: 0;
     }
-  }
+
+}
    
 /***** RESPONSIVE *****/
 @media screen and (min-width: 768px) {
+
     .container {
         max-width: 730px;
     }
     #footer {
         height: 165px;
-    }
-
+    } 
    
 }
 

@@ -29,6 +29,18 @@ $(document).ready(function(e) {
   let formattedToday = dd + '/' + mm + '/' + yyyy
   let time = today.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true}) 
 
+  document.addEventListener("orientationchange", function(event){
+    alert("Changed")
+      switch(window.orientation) 
+      {  
+          case -90: case 90:
+              /* Device is in landscape mode */
+              break; 
+          default:
+              /* Device is in portrait mode */
+      }
+});
+
   //printing out json
   setInterval(()=>{
     $.getJSON(url + "json", (result)=>{   
